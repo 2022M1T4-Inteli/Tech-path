@@ -8,21 +8,15 @@
 
 ## Eligius
 
-## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://www.linkedin.com/in/marcos-tomas/ "Marcos Tomás"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/dtonavitor "Wagner"), Valdomiro Coan.
+## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://www.linkedin.com/in/marcos-tomas/ "Marcos Tomás"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner"), Valdomiro Coan.
 
 ## Descrição
-
-📜 Descrição curta sobre o que seu projeto faz.
-
-Este é um jogo que busca ensinar 
+💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
 
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
-
-
-💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
 
 ## 🛠 Estrutura de pastas
 
@@ -38,20 +32,6 @@ Este é um jogo que busca ensinar
 |-->imagens<br>
 |-->src<br>
 |readme.md<br>
-
-A pasta raiz contem dois arquivos que devem ser alterados:
-
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
-
-Há também 4 pastas que seguem da seguinte forma:
-
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
-
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
-
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
-
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
