@@ -8,26 +8,21 @@
 
 ## Eligius
 
-## Integrantes: [Felipe Silberberg](https://github.com/felipesilber "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://github.com/jordan-acs "Marcos Tomás"), [Uelinton Rocha](https://github.com/UelitonRocha "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/dtonavitor "Wagner")
+## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://www.linkedin.com/in/marcos-tomas/ "Marcos Tomás"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/dtonavitor "Wagner"), Valdomiro Coan.
 
 ## Descrição
 
 📜 Descrição curta sobre o que seu projeto faz.
-<br><br>
-Meu projeto é um exemplo de como utilizar o github.
-<br><br>
+
+Este é um jogo que busca ensinar 
+
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
 
 ## 🛠 Estrutura de pastas
 
