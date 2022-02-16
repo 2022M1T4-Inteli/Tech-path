@@ -8,7 +8,7 @@
 
 ## Eligius
 
-## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://www.linkedin.com/in/marcos-tomas/ "Marcos Tomás"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner"), Valdomiro Coan.
+## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://www.linkedin.com/in/marcos-tomas/ "Marcos Tomás"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner"), [Valdomiro](https://www.linkedin.com/in/valdomiro-coan-filho-54933a208/ "Valdomiro")
 
 ## Descrição
 💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
