@@ -14,24 +14,9 @@
 <img src="./imagens/Jogo.jpg" alt="Tela inicial do jogo Tech Path" >
 </p>
 
-## 🛠 Estrutura de pastas
+## 🛠 Para Executar
 
--Raiz<br>
-|<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
-
-## 🛠 Instalação
-
-<b>Android:</b>
+**Android:**
 
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
@@ -40,16 +25,11 @@ Execute o APK e siga as instruções de seu telefone.
 Coloque código do prompt de comnando se for necessário
 ```
 
-<b>Windows:</b>
+**Windows:**
+É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](godotengine.org)
+Encontre "Tech Path.exe" [aqui](./executáveis/Windows)
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>HTML:</b>
+**HTML:**
 
 Não há instalação!
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
