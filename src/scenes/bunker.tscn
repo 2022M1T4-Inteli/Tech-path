@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://floor_decoration.tres" type="TileSet" id=1]
 [ext_resource path="res://wall.tres" type="TileSet" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://decorations/2D Sci-Fi Platform Builder/2-PNG Files/Props/TrashBin.png" type="Texture" id=11]
 [ext_resource path="res://decorations/2D Sci-Fi Platform Builder/2-PNG Files/Environment/LargeMonitorOff.png" type="Texture" id=12]
 [ext_resource path="res://decorations/2D Sci-Fi Platform Builder/2-PNG Files/Props/MetalBarrelBioHazard.png" type="Texture" id=13]
+[ext_resource path="res://scenes/Button.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 906.491, 140.917 )
@@ -252,3 +253,7 @@ shape = SubResource( 6 )
 
 [node name="personagem" parent="." instance=ExtResource( 3 )]
 position = Vector2( 587, -72 )
+
+[node name="Button" parent="." instance=ExtResource( 14 )]
+visible = false
+position = Vector2( 191, 59 )

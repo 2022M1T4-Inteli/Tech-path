@@ -37,8 +37,16 @@ func _physics_process(delta):
 		#roda a animação do personagem parado quando nenhuma seta é pressionada
 		animation.play("idle_1")
 		
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().quit()
+		
 	velocity = velocity.normalized() * speed
 	# possibilita a colisão com objetos
 	velocity = move_and_collide(velocity * delta)
 	pass
+	
+func _input(_ev):
+	if Input.is_key_pressed(KEY_E):
+		var _change_scene = get_tree().change_scene("res://scenes/menu.tscn")
+		#code
 	

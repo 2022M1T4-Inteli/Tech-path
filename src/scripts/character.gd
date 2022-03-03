@@ -24,3 +24,6 @@ func _physics_process(_delta):
 	else:
 		#roda a animação do personagem parado quando nenhuma seta é pressionada
 		animation.play("idle")
+	
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().quit()
