@@ -26,13 +26,11 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 **Windows:**
-É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](godotengine.org)
+É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](https://godotengine.org/)
 Encontre "Tech Path.exe" [aqui](./executáveis/Windows)
 
 **HTML:**
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Clique no arquivo "index.html", que está [aqui](./executáveis/HTML), e abra-o como uma página WEB (através de algum navegador).
 
 ## 📈 Exemplo de uso
 
@@ -40,23 +38,9 @@ Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado
 
 Adicione blocos de códigos e, se necessário, screenshots.
 
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
-
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas:
-
--<a href="https://godotengine.org/download">GODOT</a>
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo.
 
 ## 🗃 Histórico de lançamentos
 
@@ -81,10 +65,4 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 ## 🎓 Referências
 
-Aqui estão as referências usadas no projeto.
-
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+Este Readme foi baseado no template do Prof. Victor Bruno Alexander Rosetti de Quiroz do Instituto de Tecnologia e Liderança - Inteli.
