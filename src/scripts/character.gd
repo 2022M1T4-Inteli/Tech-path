@@ -11,10 +11,6 @@ func _physics_process(_delta):
 		# o personagem se mantém virado/vira para a direita 
 		$Sprite.flip_h = false
 		animation.play("run")
-		# Nesta posição ocorre a mudança de cena
-		if position.x >= 1090:
-			var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
-	# quando pressionada a seta esquerda
 	elif Input.is_action_pressed("ui_left"):
 		# o personagem anda para a esquerda 3 posições
 		position.x -= 3
@@ -27,3 +23,7 @@ func _physics_process(_delta):
 	
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().quit()
+
+
+func _on_Area2D_body_entered(_body):
+	var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
