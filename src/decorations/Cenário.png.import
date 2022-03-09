@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cenário.png-5606cad37041ac3fb248484e17fbda9a.stex"
+path="res://.import/Cenário.png-fd8fa5bc45bacbe6a7c73ce949ed2801.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cenário.png"
-dest_files=[ "res://.import/Cenário.png-5606cad37041ac3fb248484e17fbda9a.stex" ]
+source_file="res://decorations/Cenário.png"
+dest_files=[ "res://.import/Cenário.png-fd8fa5bc45bacbe6a7c73ce949ed2801.stex" ]
 
 [params]
 

@@ -4,38 +4,19 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
-
-## Eligius
-
+# Tech Path - by Eligius
 ## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Marcos Tomás](https://www.linkedin.com/in/marcos-tomas/ "Marcos Tomás"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Valdomiro](https://www.linkedin.com/in/valdomiro-coan-filho-54933a208/ "Valdomiro"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner").
 
 ## Descrição
 💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="./imagens/Jogo.jpg" alt="Tela inicial do jogo Tech Path" >
 </p>
 
-## 🛠 Estrutura de pastas
+## 🛠 Para Executar
 
--Raiz<br>
-|<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
-
-## 🛠 Instalação
-
-<b>Android:</b>
+**Android:**
 
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
@@ -44,19 +25,12 @@ Execute o APK e siga as instruções de seu telefone.
 Coloque código do prompt de comnando se for necessário
 ```
 
-<b>Windows:</b>
+**Windows:**
+É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](https://godotengine.org/)
+Encontre "Tech Path.exe" [aqui](./executáveis/Windows)
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+**HTML:**
+Clique no arquivo "index.html", que está [aqui](./executáveis/HTML), e abra-o como uma página WEB (através de algum navegador).
 
 ## 📈 Exemplo de uso
 
@@ -64,23 +38,9 @@ Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado
 
 Adicione blocos de códigos e, se necessário, screenshots.
 
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
-
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas:
-
--<a href="https://godotengine.org/download">GODOT</a>
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo.
 
 ## 🗃 Histórico de lançamentos
 
@@ -105,10 +65,4 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 ## 🎓 Referências
 
-Aqui estão as referências usadas no projeto.
-
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+Este Readme foi baseado no template do Prof. Victor Bruno Alexander Rosetti de Quiroz do Instituto de Tecnologia e Liderança - Inteli.

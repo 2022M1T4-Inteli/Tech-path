@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Jogo Inteli"
-run/main_scene="res://nivel.tscn"
+config/name="Tech Path"
+run/main_scene="res://scenes/menu.tscn"
 config/icon="res://icon.png"
 
 [physics]
