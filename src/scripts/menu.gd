@@ -1,6 +1,5 @@
 extends Control
 
-
 # ao apertar o botão de jogar mudará para a cena inicial
 func play():
  var _change_scene = get_tree().change_scene("res://scenes/nivel.tscn")

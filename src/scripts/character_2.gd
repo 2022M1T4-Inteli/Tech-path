@@ -1,14 +1,15 @@
 extends KinematicBody2D
 
+# definição de variáveis
+var use_slide = true
+var velocityPlayer = Vector2()
+var speedPlayer = 250
+
 # variável que armazena o nó de animação, tornado possível sua execução posteriormente
 onready var animation = get_node("AnimationPlayer")
 
-var use_slide = true
-var velocity = Vector2()
-var speed = 250
-
 func _physics_process(delta):
-	velocity = Vector2()
+	velocityPlayer = Vector2()
 	# quando pressionada a seta direita
 	if Input.is_action_pressed("ui_down"):
 		# o personagem anda para baixo 2 posições
@@ -40,12 +41,14 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().quit()
 		
-	velocity = velocity.normalized() * speed
+	velocityPlayer = velocityPlayer.normalized() * speedPlayer
 	# possibilita a colisão com objetos
-	velocity = move_and_collide(velocity * delta)
+	velocityPlayer = move_and_collide(velocityPlayer * delta)
 	pass
 	
+
 func _input(_ev):
+	# Muda de cena quando pressionada a tecla "E"
 	if Input.is_key_pressed(KEY_E):
 		var _change_scene = get_tree().change_scene("res://scenes/minigame_1.tscn")
 	if Input.is_key_pressed(KEY_X):
