@@ -18,12 +18,12 @@ func _physics_process(_delta):
 		$Sprite.flip_h = true
 		animation.play("run")
 	else:
-		#roda a animação do personagem parado quando nenhuma seta é pressionada
+		# roda a animação do personagem parado quando nenhuma seta é pressionada
 		animation.play("idle")
-	
+	# O jogo fecha quando a tecla "esc" é pressionada
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().quit()
 
-
+# Quando o personagem entra nessa área a cena muda.
 func _on_Area2D_body_entered(_body):
 	var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")

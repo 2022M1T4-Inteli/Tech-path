@@ -15,12 +15,12 @@ func _input(event):
 			add_child(dialog)
 
 func _on_NPC_body_entered(body):
-		if body.name == 'Player':
+		if body.name == 'personagem_2':
 			active = true
 
 func unpause(_timeline_name):
 	get_tree().paused = false
 
 func _on_NPC_body_exited(body):
-	if body.name == 'Player':
+	if body.name == 'personagem_2':
 		active = false

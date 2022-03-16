@@ -55,7 +55,7 @@ __meta__ = {
 }
 
 [node name="Play" type="Button" parent="VBox"]
-margin_right = 146.0
+margin_right = 187.0
 margin_bottom = 39.0
 focus_mode = 0
 custom_fonts/font = SubResource( 2 )
@@ -65,12 +65,22 @@ flat = true
 
 [node name="Quit" type="Button" parent="VBox"]
 margin_top = 49.0
-margin_right = 146.0
+margin_right = 187.0
 margin_bottom = 88.0
 focus_mode = 0
 custom_fonts/font = SubResource( 2 )
 enabled_focus_mode = 0
 text = "Sair"
+flat = true
+
+[node name="Options" type="Button" parent="VBox"]
+margin_top = 98.0
+margin_right = 187.0
+margin_bottom = 137.0
+focus_mode = 0
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 0
+text = "Options"
 flat = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -82,3 +92,4 @@ texture = ExtResource( 2 )
 
 [connection signal="pressed" from="VBox/Play" to="." method="play"]
 [connection signal="pressed" from="VBox/Quit" to="." method="quit"]
+[connection signal="pressed" from="VBox/Options" to="." method="_on_Options_pressed"]
