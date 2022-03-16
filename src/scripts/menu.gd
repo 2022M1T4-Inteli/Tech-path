@@ -7,3 +7,10 @@ func play():
 # ao apertar o botão de sair o jogo fecha
 func quit():
 	get_tree().quit()
+
+
+
+
+func _on_Options_pressed():
+	get_tree().change_scene("res://Control.tscn")
+	

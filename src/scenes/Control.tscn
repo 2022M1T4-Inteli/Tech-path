@@ -1,0 +1,169 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://tela preta.jpg" type="Texture" id=1]
+[ext_resource path="res://tela cinza.jpg" type="Texture" id=2]
+[ext_resource path="res://arrow-removebg-preview.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=4]
+size = 35
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://arial.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 37
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://arial.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 37
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 7 )
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://arial.ttf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 37
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://arial.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 37
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 11 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 11.0
+margin_bottom = 11.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="tela preta" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 518, 319 )
+scale = Vector2( 1.64217, 1.44844 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tela cinza" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 516, 318 )
+scale = Vector2( 0.860158, 0.951013 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="seta direita" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 576, 336 )
+scale = Vector2( 0.610834, 0.608889 )
+texture = ExtResource( 3 )
+
+[node name="seta esquerda" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 411.259, 332.529 )
+rotation = 3.13562
+scale = Vector2( 0.606581, 0.623993 )
+texture = ExtResource( 3 )
+
+[node name="seta cima" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 496, 278 )
+rotation = -1.56394
+scale = Vector2( 0.577299, 0.753025 )
+texture = ExtResource( 3 )
+
+[node name="seta baixo" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 492.959, 405.237 )
+rotation = 1.57797
+scale = Vector2( 0.533704, 0.780292 )
+texture = ExtResource( 3 )
+
+[node name="Direções" type="Button" parent="."]
+margin_left = 363.0
+margin_top = 36.0
+margin_right = 624.0
+margin_bottom = 82.0
+custom_fonts/font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Direções"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 250.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 4 )
+text = "Controls"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Direita" type="Label" parent="."]
+margin_left = 665.0
+margin_top = 300.0
+margin_right = 772.0
+margin_bottom = 342.0
+custom_fonts/font = SubResource( 6 )
+text = "Direita"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Esquerda" type="Label" parent="."]
+margin_left = 149.0
+margin_top = 298.0
+margin_right = 310.0
+margin_bottom = 340.0
+custom_fonts/font = SubResource( 8 )
+text = "Esquerda"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Para cima" type="Label" parent="."]
+margin_left = 416.0
+margin_top = 147.0
+margin_right = 584.0
+margin_bottom = 189.0
+custom_fonts/font = SubResource( 10 )
+text = "Para cima"
+
+[node name="Para baixo" type="Label" parent="."]
+margin_left = 414.0
+margin_top = 454.0
+margin_right = 593.0
+margin_bottom = 496.0
+custom_fonts/font = SubResource( 12 )
+text = "Para baixo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
