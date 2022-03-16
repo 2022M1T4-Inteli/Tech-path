@@ -4,6 +4,7 @@ extends Label
 var time = 180
 var timer_on = false
 
+
 onready var timer = get_node("Timer")
 
 # Aciona o timer
@@ -29,5 +30,12 @@ func _on_Timer_timeout():
 	time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
+		Globals.pointsCompEng = 0
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
+		
 
+func _on_softwareZone_softwareCorrect():
+	timer_on = false
+	timer.stop()
+	Globals.pointsCompEng = time * Globals.pointsCompEng
+	pass # Replace with function body.
