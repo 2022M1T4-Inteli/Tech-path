@@ -2,7 +2,7 @@ extends Area2D
 
 var active = false
 
-func _process(delta):
+func _process(_delta):
 	$QuestionMark.visible = active
 	
 func _input(event):
@@ -15,12 +15,12 @@ func _input(event):
 			add_child(dialog)
 
 func _on_NPC_body_entered(body):
-		if body.name == 'personagem_2':
+		if body.name == 'character':
 			active = true
 
 func unpause(_timeline_name):
 	get_tree().paused = false
 
 func _on_NPC_body_exited(body):
-	if body.name == 'personagem_2':
+	if body.name == 'character':
 		active = false

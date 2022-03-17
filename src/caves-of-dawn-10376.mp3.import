@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/caves-of-dawn-10376.mp3-2cb57b69ce36a91d791ed0f6433991d1.mp3str"
+
+[deps]
+
+source_file="res://caves-of-dawn-10376.mp3"
+dest_files=[ "res://.import/caves-of-dawn-10376.mp3-2cb57b69ce36a91d791ed0f6433991d1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

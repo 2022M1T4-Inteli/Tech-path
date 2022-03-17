@@ -11,12 +11,12 @@ extends Node2D
 	
 func _on_Button_pressed():
 	var equacao = String($TextEdit.text)
-	if equacao == "50 / 10": 
-		print("correto")
-		var _change_scene = get_tree().change_scene("res://Control.tscn")
+	if equacao == "100 / 500": 
+		var _change_scene = get_tree().change_scene("res://scenes/scena_win_minigame.tscn")
+		Globals.pointsSistInf = Globals.time * Globals.pointsSistInf
 	else: 
-		print("errado")
-		var _change_scene2 = get_tree().change_scene("res://Control2.tscn")
+		var _change_scene2 = get_tree().change_scene("res://scenes/Control2.tscn")
+		Globals.pointsSistInf = 5
 
 func _on_VoltarButton_pressed():
 	var _change_scene2 = get_tree().change_scene("res://Node2D.tscn")

@@ -18,54 +18,32 @@ func _ready():
 
 func _on_Button_pressed():
 	$Button/ColorPickerButton.visible = true
-	print("OK")
-	pass # Replace with function body.
-
-
-func _on_Button8_pressed():
-	$Button8/ColorPickerButton.visible = true
-	print("NÃO")
+	Globals.cButton += 1
 	
-	pass # Replace with function body.
-
-
+	
 func _on_Button3_pressed():
 	$Button3/ColorPickerButton.visible = true
-	print ("OK")
+	Globals.cButton += 1
 
-	pass # Replace with function body.
 	
 func _on_Button4_pressed():
 	$Button4/ColorPickerButton.visible = true
-	print ("NÃO")
+	Globals.iButton += 1
 	
-	pass # Replace with function body.
 	
 func _on_Button5_pressed():
 	$Button5/ColorPickerButton.visible = true
-	print ("NÃO")
-	
-	pass # Replace with function body.
-
-
-
-func _on_Button7_pressed():
-	$Button7/ColorPickerButton.visible = true
-	print ("OK")
-
-	pass # Replace with function body.
+	Globals.iButton += 1
 
 func _on_Button2_pressed():
 	$Button2/ColorPickerButton.visible = true
-	print ("OK")
-	pass # Replace with function body.
+	Globals.cButton += 1
 
 
 func _on_Button6_pressed():
 	$Button6/ColorPickerButton.visible = true
-	print ("OK")
-	
-	
-	
-	
-	pass # Replace with function body.
+	Globals.iButton += 1
+
+
+func _on_Button9_pressed():
+	var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")

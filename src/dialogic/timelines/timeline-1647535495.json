@@ -1,0 +1,25 @@
+{
+	"events": [
+		{
+			"character": "character-1647543718.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Um engenheiro da computação projeta e constrói hardware e integra o software."
+		},
+		{
+			"character": "character-1647543718.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Desse modo, conserte o robô e coloque nele o software."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.5
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1647535495.json",
+		"name": "timeline-EC"
+	}
+}

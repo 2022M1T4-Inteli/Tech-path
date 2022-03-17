@@ -17,4 +17,4 @@ func _on_processadorZone_processadorCorrect():
 
 func _on_softawreZone_softwareCorrect():
 	set_align(Label.ALIGN_CENTER)
-	set_text(str(Globals.pointsCompEng))
+	set_text("Parabéns!")

@@ -1,0 +1,25 @@
+{
+	"events": [
+		{
+			"character": "character-1647534141.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para o pleno funcionamento do bunker, as redes de distribuição de comida devem funcionar de forma plena, de modo que as pessoas recebam a mesma porção de alimento."
+		},
+		{
+			"character": "character-1647534141.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Fazendo isso, você aprenderá a administrar e organizar fluxos/sistemas de informações geradas por redes de computadores."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.5
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1647534303.json",
+		"name": "timeline-SI"
+	}
+}

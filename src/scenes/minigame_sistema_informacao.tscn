@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Node2D.gd" type="Script" id=1]
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts/TimerSI.gd" type="Script" id=3]
+[ext_resource path="res://decorations/PixelIntv-OPxd.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 17
@@ -21,6 +23,10 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 12
+font_data = ExtResource( 4 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -62,7 +68,7 @@ margin_top = 125.0
 margin_right = 367.0
 margin_bottom = 146.0
 custom_fonts/font = SubResource( 2 )
-text = "Alimentos : 50"
+text = "Alimentos : 100"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -73,7 +79,7 @@ margin_top = 124.0
 margin_right = 865.0
 margin_bottom = 150.0
 custom_fonts/font = SubResource( 2 )
-text = "Humanos : 10"
+text = "Humanos : 500"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -114,4 +120,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Time" type="Label" parent="."]
+margin_left = 911.0
+margin_top = 450.0
+margin_right = 953.0
+margin_bottom = 471.0
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = SubResource( 6 )
+text = "03:00"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="Time"]
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="timeout" from="Time/Timer" to="Time" method="_on_Timer_timeout"]

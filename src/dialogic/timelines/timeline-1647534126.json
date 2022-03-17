@@ -1,0 +1,43 @@
+{
+	"events": [
+		{
+			"character": "character-1647543811.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá, meu nome é Echo e irei ajudá-lo durante sua jornada dentro do bunker"
+		},
+		{
+			"character": "character-1647543811.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aqui, cada membro deve exercer uma importante função para manter o bunker funcionando de forma correta."
+		},
+		{
+			"character": "character-1647543811.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por ser novo por aqui, você passará por diferentes testes em diferentes áreas para decidir onde você melhor se encaixa."
+		},
+		{
+			"character": "character-1647543811.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Estes testes estão relacionados a 4 áreas de tecnologia: Engenharia da Computação, Ciências da Computação, Engenharia de Software e Sistemas de Informação."
+		},
+		{
+			"character": "character-1647543811.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bom, chega de enrolação! Dirija-se até a sala vermelha."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1647534126.json",
+		"name": "timeline-1"
+	}
+}

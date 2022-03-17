@@ -47,9 +47,4 @@ func _physics_process(delta):
 	pass
 	
 
-func _input(_ev):
-	# Muda de cena quando pressionada a tecla "E"
-	if Input.is_key_pressed(KEY_E):
-		var _change_scene = get_tree().change_scene("res://scenes/minigame_1.tscn")
-	if Input.is_key_pressed(KEY_X):
-		pass
+	

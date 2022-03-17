@@ -8,7 +8,7 @@ extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _on_VoltarButton_pressed():
-	var _change_scene3 = get_tree().change_scene("res://Node2D.tscn")
+	var _change_scene3 = get_tree().change_scene("res://scenes/minigame_sistema_informacao.tscn")
 
 
 
