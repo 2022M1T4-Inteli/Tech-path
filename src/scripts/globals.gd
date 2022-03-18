@@ -7,6 +7,6 @@ var pointsSistInf: int = 5
 
 var cButton: int = 0
 var iButton: int = 0
-var button = cButton + iButton
+var button: int = 0
 
 var time: int = 180

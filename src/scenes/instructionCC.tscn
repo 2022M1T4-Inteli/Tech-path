@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/ButtonInstCC.gd" type="Script" id=2]
+[ext_resource path="res://decorations/atencao.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=2]
 size = 30
@@ -27,6 +28,14 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
 font_data = ExtResource( 1 )
 
 [node name="Control" type="Control"]
@@ -154,10 +163,47 @@ margin_left = 810.0
 margin_top = 492.0
 margin_right = 942.0
 margin_bottom = 520.2
+custom_colors/font_color_disabled = Color( 0.705882, 0.635294, 0.635294, 1 )
 custom_fonts/font = SubResource( 7 )
 text = "Jogar"
 flat = true
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 89.0
+margin_top = 464.0
+margin_right = 219.0
+margin_bottom = 576.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="."]
+margin_left = 203.0
+margin_top = 470.0
+margin_right = 367.0
+margin_bottom = 506.0
+custom_fonts/font = SubResource( 8 )
+text = "ATENÇÃO!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label9" type="Label" parent="."]
+margin_left = 264.0
+margin_top = 506.0
+margin_right = 728.0
+margin_bottom = 584.0
+custom_colors/font_color = Color( 0.0666667, 0.0588235, 0.0588235, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Você só poderá apertar 3 botões. 
+Quando isso acontecer, o tempo para
+e você pode sair do minigame."
 __meta__ = {
 "_edit_use_anchors_": false
 }

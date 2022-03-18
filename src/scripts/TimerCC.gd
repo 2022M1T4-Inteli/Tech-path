@@ -15,6 +15,8 @@ func _ready():
 func _process(_delta):
 	if(timer_on):
 		
+		Globals.button = Globals.cButton + Globals.iButton
+		
 		# segundos igual ao resto de time/60
 		var secs = fmod(time,60)
 		# minutos igual ao (resto de time/60*60)/60
@@ -26,16 +28,23 @@ func _process(_delta):
 		
 		if Globals.cButton == 3:
 			Globals.pointsCompSci = time * Globals.pointsCompSci
-		elif Globals.iButton == 3:
-			Globals.pointsCompSci = 5
+		elif Globals.iButton == 3 and Globals.cButton == 0:
+			Globals.pointsCompSci = 100
 			timer.stop()
 			timer_on = false
-			print(Globals.pointsCompSci)
+		elif Globals.button == 3 and Globals.cButton < Globals.iButton:
+			Globals.pointsCompSci = (-1 * Globals.iButton) + (5 * Globals.cButton)
+			Globals.pointsCompSci = time * Globals.pointsCompSci
+		elif Globals.button == 3 and Globals.cButton > Globals.iButton:
+			Globals.pointsCompSci = (-1 * Globals.iButton) + (2.5 * Globals.cButton)
+			Globals.pointsCompSci = time * Globals.pointsCompSci
 		
 		if Globals.button == 3 or Globals.cButton == 3:
 			timer.stop()
 			timer_on = false
-			print(Globals.pointsCompSci)
+
+
+
 
 
 func _on_Timer_timeout():
