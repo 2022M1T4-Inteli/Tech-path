@@ -26,19 +26,24 @@ func _process(_delta):
 		var time_passed = "%02d : %02d" % [mins,secs]
 		text = time_passed
 		
+		# Calcula pontuação se forem selecionados 3 botões corretos
 		if Globals.cButton == 3:
 			Globals.pointsCompSci = time * Globals.pointsCompSci
+		# Calcula pontuação se forem selecionados 3 botões incorretos
 		elif Globals.iButton == 3 and Globals.cButton == 0:
 			Globals.pointsCompSci = 100
 			timer.stop()
 			timer_on = false
+		# Calcula pontuação se forem selecionados 2 botões incorretos e 1 correto
 		elif Globals.button == 3 and Globals.cButton < Globals.iButton:
 			Globals.pointsCompSci = (-1 * Globals.iButton) + (5 * Globals.cButton)
 			Globals.pointsCompSci = time * Globals.pointsCompSci
+		# Calcula pontuação se forem selecionados 1 botão incorreto e 2 corretos
 		elif Globals.button == 3 and Globals.cButton > Globals.iButton:
 			Globals.pointsCompSci = (-1 * Globals.iButton) + (2.5 * Globals.cButton)
 			Globals.pointsCompSci = time * Globals.pointsCompSci
 		
+		# Para o timer quando o número de botões selecionados é 3
 		if Globals.button == 3 or Globals.cButton == 3:
 			timer.stop()
 			timer_on = false
@@ -52,6 +57,6 @@ func _on_Timer_timeout():
 	time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
-		Globals.pointsCompSci = 0
+		Globals.pointsCompSci = 5
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
 	

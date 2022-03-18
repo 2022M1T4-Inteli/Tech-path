@@ -13,6 +13,6 @@ func _on_Area2D_area_exited(_area):
 	active = false
 	
 func _input(_ev):
-	# Muda de cena quando pressionada a tecla "E"
+	# Muda de cena quando pressionada a tecla "E" apenas na área específica
 	if Input.is_key_pressed(KEY_E) and active:
-		var _change_scene = get_tree().change_scene("res://scenes/instructionEC.tscn")
+		var _changeScene = get_tree().change_scene("res://scenes/instructionEC.tscn")

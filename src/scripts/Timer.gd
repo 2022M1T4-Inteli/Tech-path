@@ -15,9 +15,9 @@ func _ready():
 func _process(_delta):
 	if(timer_on):
 		
-		# segundos igual ao resto de time/60
+		# Segundos igual ao resto de time/60
 		var secs = fmod(time,60)
-		# minutos igual ao (resto de time/60*60)/60
+		# Minutos igual ao (resto de time/60*60)/60
 		var mins = fmod(time, 60*60) / 60
 		
 		# Define a forma de representação do timer na tela e o mostra
@@ -30,10 +30,10 @@ func _on_Timer_timeout():
 	time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
-		Globals.pointsCompEng = 0
+		Globals.pointsCompEng = 5
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
 		
-
+# Quando na última área para o timer e calcula a pontuação 
 func _on_softwareZone_softwareCorrect():
 	timer_on = false
 	timer.stop()

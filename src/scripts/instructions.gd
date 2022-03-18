@@ -1,5 +1,7 @@
 extends Label
 
+# Quando em uma área correta, o texto do "Label" se altera
+
 func _on_displayZone_displayCorrect():
 	set_align(Label.ALIGN_CENTER)
 	set_text("Agora, vamos mover a memória.")
