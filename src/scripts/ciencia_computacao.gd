@@ -1,20 +1,6 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
+# Quando pressionados os botões eles ficam vermelhos (adicionando 1 a variável de botões incorretos) ou verdes (adicionando 1 a variável de botões corretos) de acordo com uma pré definição
 
 func _on_Button_pressed():
 	$Button/ColorPickerButton.visible = true
@@ -44,6 +30,6 @@ func _on_Button6_pressed():
 	$Button6/ColorPickerButton.visible = true
 	Globals.iButton += 1
 
-
+# Apertando o botão ocorre mudança de cena
 func _on_Button9_pressed():
-	var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
+	var _changeScene = get_tree().change_scene("res://scenes/bunker.tscn")

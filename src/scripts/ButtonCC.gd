@@ -1,4 +1,5 @@
 extends StaticBody2D
+
 var active = false
 
 # o objeto fica vísivel em uma área específica
@@ -12,8 +13,8 @@ func _on_Area2D_area_exited(_area):
 	active = false
 	
 func _input(_ev):
-	# Muda de cena quando pressionada a tecla "Z"
+	# Muda de cena quando pressionada a tecla "Z" apenas na área específica
 	if Input.is_key_pressed(KEY_Z) and active:
-		var _change_scene = get_tree().change_scene("res://scenes/instructionCC.tscn")
+		var _changeScene = get_tree().change_scene("res://scenes/instructionCC.tscn")
 
 

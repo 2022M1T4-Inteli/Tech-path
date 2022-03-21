@@ -1,5 +1,7 @@
 extends Node2D
 
+# Essas variáveis são utilizadas em outros scripts e partes do jogo
+
 var pointsCompEng: int = 5
 var pointsCompSci: int = 5
 var pointsSoftEng: int = 5

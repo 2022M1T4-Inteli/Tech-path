@@ -19,7 +19,7 @@ func _physics_process(delta):
 	else:
 		# mudança de posição da posição atual para a posição de repouso
 		global_position = lerp(global_position, restPoint, 10 * delta)
-		
+
 # Essa função faz com que o objeto volte para a área em que estava se não entrar em outra
 func _input(event):
 	if  event is InputEventMouseButton:

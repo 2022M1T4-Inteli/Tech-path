@@ -5,6 +5,7 @@ var active = false
 func _process(_delta):
 	$QuestionMark.visible = active
 	
+# Essa função valida se a interação com o NPC está ocorrendo e caso ocorra mostra o diálogo
 func _input(event):
 	if get_node_or_null('DialogNode') == null:
 		if event.is_action_pressed("ui_accept") and active:

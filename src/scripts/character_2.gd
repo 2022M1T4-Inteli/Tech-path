@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 # definição de variáveis
-var use_slide = true
+var useSlide = true
 var velocityPlayer = Vector2()
 var speedPlayer = 250
 
@@ -38,13 +38,14 @@ func _physics_process(delta):
 		#roda a animação do personagem parado quando nenhuma seta é pressionada
 		animation.play("idle_1")
 		
+		# Fecha a guia quando pressionada a tecla "esc"
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().quit()
 		
 	velocityPlayer = velocityPlayer.normalized() * speedPlayer
+	
 	# possibilita a colisão com objetos
 	velocityPlayer = move_and_collide(velocityPlayer * delta)
-	pass
 	
 
 	
