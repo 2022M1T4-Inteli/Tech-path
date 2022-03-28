@@ -23,7 +23,8 @@ func _process(_delta):
 		# Define a forma de representação do timer na tela e o mostra
 		var time_passed = "%02d : %02d" % [mins,secs]
 		text = time_passed
-		
+	
+	# Calcula a pontuação no minigame
 	if Globals.correctOrder == true and Globals.nodeNumber > Globals.nodeNumberMax:
 		Globals.pointsSoftEng = time * 5
 		timer.stop()

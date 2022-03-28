@@ -30,12 +30,11 @@ func _on_Timer_timeout():
 	time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
-		Globals.pointsCompEng = 5
+		Globals.pointsCompEng = 100
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
 		
 # Quando na última área para o timer e calcula a pontuação 
 func _on_softwareZone_softwareCorrect():
 	timer_on = false
 	timer.stop()
-	Globals.pointsCompEng = time * Globals.pointsCompEng
-	pass # Replace with function body.
+	Globals.pointsCompEng = time * 5
