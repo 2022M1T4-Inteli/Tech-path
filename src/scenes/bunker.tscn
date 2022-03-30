@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://floor_decoration.tres" type="TileSet" id=1]
 [ext_resource path="res://wall.tres" type="TileSet" id=2]
@@ -24,11 +24,13 @@
 [ext_resource path="res://scenes/NPC_CC.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/NPC_EC.tscn" type="PackedScene" id=23]
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=24]
-[ext_resource path="res://scripts/pontosSI.gd" type="Script" id=25]
 [ext_resource path="res://caves-of-dawn-10376.mp3" type="AudioStream" id=26]
 [ext_resource path="res://scenes/ButtonEnd.tscn" type="PackedScene" id=27]
 [ext_resource path="res://scenes/ButtonES.tscn" type="PackedScene" id=28]
 [ext_resource path="res://scenes/NPC_ES.tscn" type="PackedScene" id=29]
+[ext_resource path="res://decorations/barra_espaço.png" type="Texture" id=31]
+[ext_resource path="res://decorations/327-3271934_arrow-key-cliparts-arrow-keys-and-spacebar.png" type="Texture" id=32]
+[ext_resource path="res://decorations/wasd.png" type="Texture" id=33]
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -188,8 +190,23 @@ extents = Vector2( 44, 15 )
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 10.5, 18 )
 
-[sub_resource type="DynamicFont" id=17]
-size = 14
+[sub_resource type="DynamicFont" id=18]
+size = 35
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 22
+outline_color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 25
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 25
 font_data = ExtResource( 24 )
 
 [node name="Node2D" type="Node2D"]
@@ -598,7 +615,7 @@ visible = false
 position = Vector2( 191, 310 )
 
 [node name="npc" parent="." instance=ExtResource( 20 )]
-position = Vector2( 170, -286 )
+position = Vector2( 168, -256 )
 
 [node name="NPC_SI" parent="." instance=ExtResource( 21 )]
 position = Vector2( -45, -107 )
@@ -612,18 +629,89 @@ position = Vector2( 428, 24 )
 [node name="NPC_ES" parent="." instance=ExtResource( 29 )]
 position = Vector2( -69, -13 )
 
-[node name="Label" type="Label" parent="."]
-margin_left = 516.0
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )
+autoplay = true
+
+[node name="controles" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="controles"]
+margin_left = 476.0
 margin_top = -229.0
-margin_right = 755.0
-margin_bottom = -157.0
-custom_fonts/font = SubResource( 17 )
-text = "Pontos"
-script = ExtResource( 25 )
+margin_right = 692.0
+margin_bottom = -187.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 18 )
+text = "Controles"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 26 )
-autoplay = true
+[node name="TextureRect" type="TextureRect" parent="controles"]
+margin_left = 444.0
+margin_top = -208.0
+margin_right = 493.0
+margin_bottom = -169.0
+texture = ExtResource( 32 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="controles"]
+margin_left = 499.0
+margin_top = -208.0
+margin_right = 552.0
+margin_bottom = -169.0
+texture = ExtResource( 33 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="controles"]
+margin_left = 442.0
+margin_top = -192.0
+margin_right = 792.0
+margin_bottom = 158.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="controles/TextureRect3"]
+margin_left = 120.0
+margin_top = 150.0
+margin_right = 210.0
+margin_bottom = 177.0
+custom_colors/font_color = Color( 0.0470588, 0.0392157, 0.0392157, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Espaço"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="controles"]
+margin_left = 263.0
+margin_top = -171.0
+margin_right = 1178.0
+margin_bottom = -140.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 21 )
+text = "Interaçôes (robôs do mapa, elevador e entrar no minigame):"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="controles"]
+margin_left = 265.0
+margin_top = -194.0
+margin_right = 473.0
+margin_bottom = -128.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 22 )
+text = "Movimentação:"
+__meta__ = {
+"_edit_use_anchors_": false
+}

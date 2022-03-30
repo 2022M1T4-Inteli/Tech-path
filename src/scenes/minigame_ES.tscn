@@ -73,7 +73,7 @@ scale = Vector2( 6.43, 5.94 )
 texture = ExtResource( 8 )
 
 [node name="BlocoDeCodigo" type="Area2D" parent="."]
-position = Vector2( 260, 511 )
+position = Vector2( 302, 517 )
 scale = Vector2( 2.39202, 2.12999 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -104,7 +104,7 @@ position = Vector2( 1.25414, 4.69485 )
 shape = SubResource( 5 )
 
 [node name="BlocoDeCodigo2" type="Area2D" parent="."]
-position = Vector2( 213, 296 )
+position = Vector2( 326, 285 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -135,7 +135,7 @@ scale = Vector2( 1.55, 1.8 )
 shape = SubResource( 2 )
 
 [node name="BlocoDeCodigo3" type="Area2D" parent="."]
-position = Vector2( 175, 178 )
+position = Vector2( 189, 175 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -166,7 +166,7 @@ scale = Vector2( 1.55, 1.8 )
 shape = SubResource( 2 )
 
 [node name="BlocoDeCodigo4" type="Area2D" parent="."]
-position = Vector2( 271, 417 )
+position = Vector2( 176, 406 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -196,7 +196,7 @@ __meta__ = {
 }
 
 [node name="BlocoDeCodigo5" type="Area2D" parent="."]
-position = Vector2( 409, 80 )
+position = Vector2( 380, 60 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
