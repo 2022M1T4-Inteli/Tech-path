@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://floor_decoration.tres" type="TileSet" id=1]
 [ext_resource path="res://wall.tres" type="TileSet" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://caves-of-dawn-10376.mp3" type="AudioStream" id=26]
 [ext_resource path="res://scenes/ButtonEnd.tscn" type="PackedScene" id=27]
 [ext_resource path="res://scenes/ButtonES.tscn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/NPC_ES.tscn" type="PackedScene" id=29]
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -207,42 +208,132 @@ cell_quadrant_size = 32
 format = 1
 tile_data = PoolIntArray( -262138, 0, 2, -262137, 0, 5, -262136, 0, 5, -262135, 0, 5, -262134, 0, 5, -262133, 0, 5, -262132, 0, 5, -262131, 0, 5, -262130, 0, 5, -262129, 0, 5, -262128, 0, 5, -262127, 0, 5, -262126, 0, 5, -262125, 0, 5, -262124, 0, 5, -262123, 0, 5, -262122, 0, 5, -262121, 0, 5, -262120, 0, 5, -262119, 0, 327689, -196603, 0, 65537, -196602, 0, 65538, -196583, 0, 65544, -196582, 0, 65545, -131067, 0, 131073, -131046, 0, 131081, -65532, 1, 0, -65531, 0, 131073, -65510, 0, 131081, 0, 0, 2, 1, 0, 5, 2, 0, 5, 3, 0, 5, 4, 0, 5, 5, 0, 5, 6, 0, 5, 7, 0, 5, 8, 0, 5, 9, 0, 5, 10, 0, 8, 21, 0, 65537, 22, 0, 5, 23, 0, 5, 24, 0, 5, 25, 0, 5, 26, 0, 5, 27, 0, 5, 28, 0, 5, 29, 0, 5, 30, 0, 5, 31, 0, 8, 65536, 0, 131073, 65546, 0, 131081, 65557, 0, 131073, 65567, 0, 131081, 131072, 0, 131073, 131082, 0, 131081, 131093, 0, 131073, 131103, 0, 131081, 196608, 0, 131073, 196618, 0, 131081, 196629, 0, 131073, 196639, 0, 131081, 262144, 0, 131073, 262150, 0, 0, 262175, 0, 131081, 327680, 0, 131073, 327711, 0, 131081, 393216, 0, 131073, 393226, 0, 131081, 393237, 0, 131073, 393247, 0, 131081, 458752, 0, 131073, 458762, 0, 131081, 458773, 0, 131073, 458783, 0, 131081, 589823, 0, 65537, 524288, 0, 65538, 524298, 0, 65544, 524299, 0, 65545, 524308, 0, 65537, 524309, 0, 65538, 524319, 0, 65544, 524320, 0, 65545, 655359, 0, 131073, 589835, 0, 131081, 589844, 0, 131073, 589856, 0, 131081, 589875, 1, 0, 720895, 0, 131073, 655371, 0, 131081, 655380, 0, 131073, 655392, 0, 131081, 786431, 0, 131073, 720907, 0, 131081, 720916, 0, 131073, 720928, 0, 131081, 851967, 0, 131076, 786432, 0, 5, 786433, 0, 5, 786434, 0, 5, 786435, 0, 5, 786436, 0, 5, 786437, 0, 5, 786438, 0, 5, 786439, 0, 5, 786440, 0, 5, 786441, 0, 5, 786442, 0, 5, 786443, 0, 131078, 786452, 0, 131076, 786453, 0, 5, 786454, 0, 5, 786455, 0, 5, 786456, 0, 5, 786457, 0, 5, 786458, 0, 5, 786459, 0, 5, 786460, 0, 5, 786461, 0, 5, 786462, 0, 5, 786463, 0, 5, 786464, 0, 131078, 851972, 1, 0, 851973, 0, 131073, 851994, 0, 131081, 917508, 1, 0, 917509, 0, 131073, 917530, 0, 131081, 983045, 0, 65540, 983046, 0, 5, 983047, 0, 5, 983048, 0, 5, 983049, 0, 5, 983050, 0, 5, 983051, 0, 5, 983052, 0, 5, 983053, 0, 5, 983054, 0, 5, 983055, 0, 5, 983056, 0, 5, 983057, 0, 5, 983058, 0, 5, 983059, 0, 5, 983060, 0, 5, 983061, 0, 5, 983062, 0, 5, 983063, 0, 5, 983064, 0, 5, 983065, 0, 5, 983066, 0, 131078 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 8.0
-margin_top = 92.0
-margin_right = 344.0
-margin_bottom = 127.0
+[node name="RedPath" type="ColorRect" parent="."]
+margin_left = 447.0
+margin_top = -95.0
+margin_right = 466.0
+margin_bottom = 149.0
 color = Color( 0.678431, 0.0313726, 0.0313726, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-margin_left = 8.0
-margin_top = 234.0
-margin_right = 344.0
-margin_bottom = 269.0
+[node name="RedPath2" type="ColorRect" parent="."]
+margin_left = 156.0
+margin_top = 132.0
+margin_right = 447.0
+margin_bottom = 149.0
+color = Color( 0.678431, 0.0313726, 0.0313726, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedPath3" type="ColorRect" parent="."]
+margin_left = 156.0
+margin_top = 76.0
+margin_right = 175.0
+margin_bottom = 148.0
+color = Color( 0.678431, 0.0313726, 0.0313726, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BluePath" type="ColorRect" parent="."]
+margin_left = 466.0
+margin_top = -95.0
+margin_right = 486.0
+margin_bottom = 192.0
 color = Color( 0.0470588, 0.12549, 0.54902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect3" type="ColorRect" parent="."]
-margin_left = 680.0
-margin_top = 95.0
-margin_right = 1016.0
-margin_bottom = 127.0
+[node name="BluePath2" type="ColorRect" parent="."]
+margin_left = 155.0
+margin_top = 174.0
+margin_right = 469.0
+margin_bottom = 192.0
+color = Color( 0.0470588, 0.12549, 0.54902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BluePath3" type="ColorRect" parent="."]
+margin_left = 155.0
+margin_top = 176.0
+margin_right = 175.0
+margin_bottom = 284.0
+color = Color( 0.0470588, 0.12549, 0.54902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenPath" type="ColorRect" parent="."]
+margin_left = 575.0
+margin_top = -94.0
+margin_right = 595.0
+margin_bottom = 149.0
 color = Color( 0.156863, 0.54902, 0.0470588, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect4" type="ColorRect" parent="."]
-margin_left = 676.0
-margin_top = 271.0
-margin_right = 1022.0
-margin_bottom = 306.0
-color = Color( 0.690196, 0.760784, 0.054902, 1 )
+[node name="GreenPath2" type="ColorRect" parent="."]
+margin_left = 595.0
+margin_top = 130.0
+margin_right = 848.0
+margin_bottom = 149.0
+color = Color( 0.156863, 0.54902, 0.0470588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowPath" type="ColorRect" parent="."]
+margin_left = 555.0
+margin_top = -94.0
+margin_right = 575.0
+margin_bottom = 191.0
+color = Color( 0.843137, 0.929412, 0.0588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowPath2" type="ColorRect" parent="."]
+margin_left = 555.0
+margin_top = 173.0
+margin_right = 750.0
+margin_bottom = 191.0
+color = Color( 0.843137, 0.929412, 0.0588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowPath3" type="ColorRect" parent="."]
+margin_left = 729.0
+margin_top = 173.0
+margin_right = 750.0
+margin_bottom = 281.0
+color = Color( 0.843137, 0.929412, 0.0588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowPath4" type="ColorRect" parent="."]
+margin_left = 730.0
+margin_top = 263.0
+margin_right = 855.0
+margin_bottom = 281.0
+color = Color( 0.843137, 0.929412, 0.0588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ElevatorPath" type="ColorRect" parent="."]
+margin_left = 505.0
+margin_top = -93.0
+margin_right = 524.0
+margin_bottom = 480.0
+color = Color( 0.509804, 0.501961, 0.501961, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -486,6 +577,7 @@ position = Vector2( -0.5, -2.50002 )
 shape = SubResource( 16 )
 
 [node name="Button" parent="." instance=ExtResource( 14 )]
+visible = false
 position = Vector2( 862, 96 )
 
 [node name="Button2" parent="." instance=ExtResource( 17 )]
@@ -506,7 +598,7 @@ visible = false
 position = Vector2( 191, 310 )
 
 [node name="npc" parent="." instance=ExtResource( 20 )]
-position = Vector2( 213, -58 )
+position = Vector2( 170, -286 )
 
 [node name="NPC_SI" parent="." instance=ExtResource( 21 )]
 position = Vector2( -45, -107 )
@@ -515,7 +607,10 @@ position = Vector2( -45, -107 )
 position = Vector2( 458, -107 )
 
 [node name="NPC_CC" parent="." instance=ExtResource( 22 )]
-position = Vector2( 441, 23 )
+position = Vector2( 428, 24 )
+
+[node name="NPC_ES" parent="." instance=ExtResource( 29 )]
+position = Vector2( -69, -13 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 516.0
