@@ -1,0 +1,31 @@
+{
+	"events": [
+		{
+			"character": "character-1648571655.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "O engenheiro de software, dentre outras funções, direciona seu conhecimento para o desenvolvimento de programa, sua manutenção e adequação a diferentes processos produtivos, se concentrando no processo prático da produção de um software."
+		},
+		{
+			"character": "character-1648571655.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Depois de ordenar uma sequência de pensamentos lógicos, faça o código completo."
+		},
+		{
+			"character": "character-1648571655.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Agora, vá para o computador abaixo."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.5
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648571680.json",
+		"name": "timeline-ES"
+	}
+}

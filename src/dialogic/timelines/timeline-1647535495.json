@@ -4,13 +4,13 @@
 			"character": "character-1647543718.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Um engenheiro da computação projeta e constrói hardware e integra o software."
+			"text": "Uma das áreas em que o engenheiro da computação atua é na projeção e construção do hardware, além da integração do software. "
 		},
 		{
 			"character": "character-1647543718.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Desse modo, conserte o robô e coloque nele o software."
+			"text": "Desse modo, conserte o robô ao lado e integre nele o software."
 		},
 		{
 			"event_id": "dialogic_022",

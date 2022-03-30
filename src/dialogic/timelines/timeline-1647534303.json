@@ -4,13 +4,19 @@
 			"character": "character-1647534141.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Para o pleno funcionamento do bunker, as redes de distribuição de comida devem funcionar de forma plena, de modo que as pessoas recebam a mesma porção de alimento."
+			"text": "Para o pleno funcionamento do bunker, as redes de distribuição de comida devem funcionar de forma correta, de modo que as pessoas recebam a mesma porção de alimento."
 		},
 		{
 			"character": "character-1647534141.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Fazendo isso, você aprenderá a administrar e organizar fluxos/sistemas de informações geradas por redes de computadores."
+			"text": "Fazendo isso, você estará exercendo uma das funções de um profissional de sistemas de informações, pois você estará administrando e organizando fluxos de dados  gerados por redes de computadores."
+		},
+		{
+			"character": "character-1647534141.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Agora, vá para o computador ao lado."
 		},
 		{
 			"event_id": "dialogic_022",

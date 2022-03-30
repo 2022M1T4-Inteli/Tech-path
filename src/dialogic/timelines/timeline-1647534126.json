@@ -4,7 +4,7 @@
 			"character": "character-1647543811.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Olá, meu nome é Echo e irei ajudá-lo durante sua jornada dentro do bunker"
+			"text": "Olá, meu nome é [color=#FFFFFF]Echo e irei ajudá-lo durante sua jornada dentro do bunker"
 		},
 		{
 			"character": "character-1647543811.json",
@@ -28,11 +28,11 @@
 			"character": "character-1647543811.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Bom, chega de enrolação! Dirija-se até a sala vermelha."
+			"text": "Bom, chega de enrolação! Dirija-se até a [color=#f91a1a]sala vermelha."
 		},
 		{
 			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"transition_duration": 0.5
 		}
 	],
 	"metadata": {

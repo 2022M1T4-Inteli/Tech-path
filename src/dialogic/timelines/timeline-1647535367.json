@@ -4,7 +4,7 @@
 			"character": "character-1647543700.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "O cientista da computação está diretamente envolvido no desenvolvimento de algoritmos e da lógica de processos, para que possam ser aplicados em dispositivos mecânicos e eletrônicos."
+			"text": "O cientista da computação está envolvido no desenvolvimento de algoritmos e da lógica de processos, para que possam ser aplicados em dispositivos mecânicos e eletrônicos."
 		},
 		{
 			"character": "character-1647543700.json",
@@ -16,7 +16,7 @@
 			"character": "character-1647543700.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Após o cumprimento dessa tarefa, dirija-se até a sala azul."
+			"text": "Dirija-se até o computador ao lado."
 		},
 		{
 			"event_id": "dialogic_022",
