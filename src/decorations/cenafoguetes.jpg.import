@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/peça 2.png-997f44f84366e2d8757a59fce91d3969.stex"
+path="res://.import/cenafoguetes.jpg-ce91c8f6a8a86e91c87239939788332f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://decorations/peça 2.png"
-dest_files=[ "res://.import/peça 2.png-997f44f84366e2d8757a59fce91d3969.stex" ]
+source_file="res://decorations/cenafoguetes.jpg"
+dest_files=[ "res://.import/cenafoguetes.jpg-ce91c8f6a8a86e91c87239939788332f.stex" ]
 
 [params]
 

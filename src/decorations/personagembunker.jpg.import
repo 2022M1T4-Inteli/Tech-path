@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/peça 2.png-997f44f84366e2d8757a59fce91d3969.stex"
+path="res://.import/personagembunker.jpg-ecd36e6a7a75dfda3d5a2aefefeb9c55.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://decorations/peça 2.png"
-dest_files=[ "res://.import/peça 2.png-997f44f84366e2d8757a59fce91d3969.stex" ]
+source_file="res://decorations/personagembunker.jpg"
+dest_files=[ "res://.import/personagembunker.jpg-ecd36e6a7a75dfda3d5a2aefefeb9c55.stex" ]
 
 [params]
 
