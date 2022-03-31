@@ -1,0 +1,163 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1648740728.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alguns anos atrás..."
+		},
+		{
+			"background": "res://decorations/cut1.0.jpg",
+			"event_id": "dialogic_021",
+			"fade_duration": 4
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1648745400.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Um sistema de I.A foi criado por um cientista muito famoso com o objetivo de ajudar a construir um mundo melhor"
+		},
+		{
+			"background": "res://decorations/espaço (1).jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No entanto, inesperadamente, a I.A concluiu que o único jeito de ajudar o planeta era o extermínio da raça humana."
+		},
+		{
+			"background": "res://decorations/cena2 (1).jpg",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.5
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para isso, hackeou códigos de armas nucleares secretas "
+		},
+		{
+			"background": "res://decorations/cenafoguetes.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.3
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "E as lançou pelo mundo"
+		},
+		{
+			"background": "res://decorations/cidade sendo atacada.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pessoas foram mortas, cidades destruídas e o caos se espalhou pelo mundo inteiro."
+		},
+		{
+			"background": "res://decorations/bunker1.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Em meio à tragédia, um grupo de sobreviventes se instalou em um bunker e se organizou como uma sociedade."
+		},
+		{
+			"background": "res://decorations/cena4.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Porém, a quantidade de comida adquirida passou a ser insuficiente para o número de habitantes do bunker."
+		},
+		{
+			"background": "res://decorations/personagembunker.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Diante desse cenário, você, ALEX, deverá entrar no bunker, achar seu lugar e ajudar a resolver esse grande problema."
+		},
+		{
+			"background": "res://decorations/black screen.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1648740728.cfg"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vamos lá?"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"change_scene": "res://scenes/bunker.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648737071.json",
+		"name": "cut1"
+	}
+}
