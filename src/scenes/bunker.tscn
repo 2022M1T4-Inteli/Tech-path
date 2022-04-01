@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://floor_decoration.tres" type="TileSet" id=1]
 [ext_resource path="res://wall.tres" type="TileSet" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://scenes/NPC_CC.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/NPC_EC.tscn" type="PackedScene" id=23]
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=24]
+[ext_resource path="res://scripts/PauseMenu.gd" type="Script" id=25]
 [ext_resource path="res://caves-of-dawn-10376.mp3" type="AudioStream" id=26]
 [ext_resource path="res://scenes/ButtonEnd.tscn" type="PackedScene" id=27]
 [ext_resource path="res://scenes/ButtonES.tscn" type="PackedScene" id=28]
@@ -209,7 +210,32 @@ font_data = ExtResource( 24 )
 size = 25
 font_data = ExtResource( 24 )
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.109804, 0.121569, 0.141176, 1 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 41
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 17
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 18
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 17
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 24 )
+
+[node name="bunker" type="Node2D"]
 
 [node name="floor" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -338,7 +364,7 @@ __meta__ = {
 [node name="YellowPath4" type="ColorRect" parent="."]
 margin_left = 730.0
 margin_top = 263.0
-margin_right = 855.0
+margin_right = 832.0
 margin_bottom = 281.0
 color = Color( 0.843137, 0.929412, 0.0588235, 1 )
 __meta__ = {
@@ -385,7 +411,7 @@ tile_data = PoolIntArray( -262132, 0, 0 )
 tile_set = SubResource( 12 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 458776, 0, 1, 1114150, 0, 1, 1835026, 0, 0, 1835027, 0, 1, 1900562, 0, 0, 1900563, 0, 1 )
+tile_data = PoolIntArray( 1835026, 0, 0, 1835027, 0, 1, 1900562, 0, 0, 1900563, 0, 1 )
 
 [node name="computer3" type="TileMap" parent="."]
 position = Vector2( 327, 400 )
@@ -595,7 +621,7 @@ shape = SubResource( 16 )
 
 [node name="Button" parent="." instance=ExtResource( 14 )]
 visible = false
-position = Vector2( 862, 96 )
+position = Vector2( 863, 97 )
 
 [node name="Button2" parent="." instance=ExtResource( 17 )]
 visible = false
@@ -603,7 +629,7 @@ position = Vector2( 190, 95 )
 
 [node name="Button3" parent="." instance=ExtResource( 18 )]
 visible = false
-position = Vector2( 861, 296 )
+position = Vector2( 869, 302 )
 script = ExtResource( 19 )
 
 [node name="Button4" parent="." instance=ExtResource( 27 )]
@@ -612,10 +638,10 @@ position = Vector2( 539, 492 )
 
 [node name="Button5" parent="." instance=ExtResource( 28 )]
 visible = false
-position = Vector2( 191, 310 )
+position = Vector2( 190, 314 )
 
 [node name="npc" parent="." instance=ExtResource( 20 )]
-position = Vector2( 168, -256 )
+position = Vector2( 189, -276 )
 
 [node name="NPC_SI" parent="." instance=ExtResource( 21 )]
 position = Vector2( -45, -107 )
@@ -627,7 +653,7 @@ position = Vector2( 458, -107 )
 position = Vector2( 428, 24 )
 
 [node name="NPC_ES" parent="." instance=ExtResource( 29 )]
-position = Vector2( -69, -13 )
+position = Vector2( -174, -19 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 26 )
@@ -636,9 +662,9 @@ autoplay = true
 [node name="controles" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="controles"]
-margin_left = 476.0
+margin_left = 471.0
 margin_top = -229.0
-margin_right = 692.0
+margin_right = 687.0
 margin_bottom = -187.0
 rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 18 )
@@ -648,9 +674,9 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="controles"]
-margin_left = 444.0
+margin_left = 406.0
 margin_top = -208.0
-margin_right = 493.0
+margin_right = 455.0
 margin_bottom = -169.0
 texture = ExtResource( 32 )
 expand = true
@@ -659,9 +685,9 @@ __meta__ = {
 }
 
 [node name="TextureRect2" type="TextureRect" parent="controles"]
-margin_left = 499.0
+margin_left = 461.0
 margin_top = -208.0
-margin_right = 552.0
+margin_right = 514.0
 margin_bottom = -169.0
 texture = ExtResource( 33 )
 expand = true
@@ -670,9 +696,9 @@ __meta__ = {
 }
 
 [node name="TextureRect3" type="TextureRect" parent="controles"]
-margin_left = 442.0
+margin_left = 465.0
 margin_top = -192.0
-margin_right = 792.0
+margin_right = 815.0
 margin_bottom = 158.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 31 )
@@ -693,21 +719,21 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="controles"]
-margin_left = 263.0
-margin_top = -171.0
-margin_right = 1178.0
-margin_bottom = -140.0
+margin_left = 267.0
+margin_top = -168.0
+margin_right = 1268.0
+margin_bottom = -137.0
 rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 21 )
-text = "Interaçôes (robôs do mapa, elevador e entrar no minigame):"
+text = "Interações - ! (robôs do mapa, elevador e entrar nos minigames):"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label3" type="Label" parent="controles"]
-margin_left = 265.0
+margin_left = 288.0
 margin_top = -194.0
-margin_right = 473.0
+margin_right = 503.0
 margin_bottom = -128.0
 rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 22 )
@@ -715,3 +741,92 @@ text = "Movimentação:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label4" type="Label" parent="controles"]
+margin_left = 556.0
+margin_top = -196.0
+margin_right = 910.0
+margin_bottom = -130.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 22 )
+text = "Pause: Pressione Enter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="controles"]
+
+[node name="PopupMenu" type="PopupMenu" parent="controles/CanvasLayer"]
+pause_mode = 2
+margin_left = 390.0
+margin_top = -191.0
+margin_right = 661.0
+margin_bottom = 32.0
+custom_styles/panel = SubResource( 23 )
+script = ExtResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="controles/CanvasLayer/PopupMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -68.0
+margin_top = -77.0
+margin_right = 65.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="controles/CanvasLayer/PopupMenu/CenterContainer"]
+margin_left = 115.0
+margin_top = 101.0
+margin_right = 288.0
+margin_bottom = 273.0
+custom_constants/separation = 10
+
+[node name="Label" type="Label" parent="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer"]
+margin_right = 173.0
+margin_bottom = 50.0
+custom_fonts/font = SubResource( 24 )
+text = "PAUSED"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer"]
+margin_top = 60.0
+margin_right = 173.0
+margin_bottom = 60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResumeBtn" type="Button" parent="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer"]
+margin_top = 70.0
+margin_right = 173.0
+margin_bottom = 97.0
+rect_min_size = Vector2( 22, 22 )
+custom_fonts/font = SubResource( 25 )
+text = "Voltar ao jogo"
+
+[node name="QuitBtn" type="Button" parent="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer"]
+margin_top = 107.0
+margin_right = 173.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 22, 22 )
+custom_fonts/font = SubResource( 26 )
+text = "Sair"
+
+[node name="VoltarMenuBtn" type="Button" parent="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer"]
+margin_top = 145.0
+margin_right = 173.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 22, 22 )
+rect_pivot_offset = Vector2( 60, 0 )
+custom_fonts/font = SubResource( 27 )
+text = "Voltar ao menu"
+
+[connection signal="pressed" from="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer/ResumeBtn" to="controles/CanvasLayer/PopupMenu" method="_on_ResumeBtn_pressed"]
+[connection signal="pressed" from="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer/QuitBtn" to="controles/CanvasLayer/PopupMenu" method="_on_QuitBtn_pressed"]
+[connection signal="pressed" from="controles/CanvasLayer/PopupMenu/CenterContainer/VBoxContainer/VoltarMenuBtn" to="controles/CanvasLayer/PopupMenu" method="_on_VoltarMenuBtn_pressed"]

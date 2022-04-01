@@ -3,31 +3,31 @@ extends Node2D
 # Quando pressionados os botões eles ficam vermelhos (adicionando 1 a variável de botões incorretos) ou verdes (adicionando 1 a variável de botões corretos) de acordo com uma pré definição
 
 func _on_Button_pressed():
-	$Button/ColorPickerButton.visible = true
+	$Button/ColorRect.visible = true
 	Globals.cButton += 1
 	
 	
 func _on_Button3_pressed():
-	$Button3/ColorPickerButton.visible = true
+	$Button3/ColorRect.visible = true
 	Globals.cButton += 1
 
 	
 func _on_Button4_pressed():
-	$Button4/ColorPickerButton.visible = true
+	$Button4/ColorRect.visible = true
 	Globals.iButton += 1
 	
 	
 func _on_Button5_pressed():
-	$Button5/ColorPickerButton.visible = true
+	$Button5/ColorRect.visible = true
 	Globals.iButton += 1
 
 func _on_Button2_pressed():
-	$Button2/ColorPickerButton.visible = true
+	$Button2/ColorRect.visible = true
 	Globals.cButton += 1
 
 
 func _on_Button6_pressed():
-	$Button6/ColorPickerButton.visible = true
+	$Button6/ColorRect.visible = true
 	Globals.iButton += 1
 
 # Apertando o botão ocorre mudança de cena

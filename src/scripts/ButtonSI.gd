@@ -4,8 +4,8 @@ var active = false
 
 func _input(_ev):
 	# Muda de cena quando pressionada a tecla "V" apenas na área específica
-	if Input.is_key_pressed(KEY_V) and active:
-		var _changeScene = get_tree().change_scene("res://scenes/instructionSF.tscn")
+	if Input.is_action_pressed("ui_accept") and active:
+		var _changeScene = get_tree().change_scene("res://scenes/instructionSI.tscn")
 
 # o objeto fica vísivel em uma área específica
 func _on_Area_ativa_area_entered(_area):

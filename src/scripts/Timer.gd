@@ -23,18 +23,18 @@ func _process(_delta):
 		# Define a forma de representação do timer na tela e o mostra
 		var time_passed = "%02d : %02d" % [mins,secs]
 		text = time_passed
-
+		
+		if Globals.correctOrderEC == true:
+			Globals.pointsCompEng = time * 5
+		else:
+			Globals.pointsCompEng = 500
 
 func _on_Timer_timeout():
 	# O tempo diminui um segundo a cada vez que o timer chega a zero
 	time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
-		Globals.pointsCompEng = 100
+		Globals.pointsCompEng = 500
+		timer.stop()
+		time = 180
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
-		
-# Quando na última área para o timer e calcula a pontuação 
-func _on_softwareZone_softwareCorrect():
-	timer_on = false
-	timer.stop()
-	Globals.pointsCompEng = time * 5

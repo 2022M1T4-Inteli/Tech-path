@@ -29,8 +29,9 @@ func _process(_delta):
 		Globals.pointsSoftEng = time * 5
 		timer.stop()
 		timer_on = false
+		time = 180
 	else:
-		Globals.pointsSoftEng = 200
+		Globals.pointsSoftEng = 500
 
 
 func _on_Timer_timeout():
@@ -38,6 +39,8 @@ func _on_Timer_timeout():
 	time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
-		Globals.pointsCompEng = 100
+		Globals.pointsCompEng = 500
+		timer.stop()
+		time = 180
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
 		

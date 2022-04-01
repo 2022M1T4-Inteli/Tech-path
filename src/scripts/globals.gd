@@ -24,3 +24,16 @@ var nodes = ["/root/Node2D/Pos1",
 var nodeNumber = 0
 var nodeNumberMax = len(nodes) - 1
 var correctOrder = true
+
+var objCatchedEC = false
+var nodesEC = ["/root/Node2D/Pos1",
+	"/root/Node2D/Pos2",
+	"/root/Node2D/Pos3",
+	"/root/Node2D/Pos4",
+]
+
+var nodeNumberEC = 0
+var nodeNumberMaxEC = len(nodesEC) - 1
+var correctOrderEC = true
+
+

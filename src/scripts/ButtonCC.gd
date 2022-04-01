@@ -14,7 +14,7 @@ func _on_Area2D_area_exited(_area):
 	
 func _input(_ev):
 	# Muda de cena quando pressionada a tecla "Z" apenas na área específica
-	if Input.is_key_pressed(KEY_Z) and active:
+	if Input.is_action_pressed("ui_accept") and active:
 		var _changeScene = get_tree().change_scene("res://scenes/instructionCC.tscn")
 
 

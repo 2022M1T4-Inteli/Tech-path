@@ -54,4 +54,4 @@ func _draw():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://scenes/menu.tscn")
+	get_tree().change_scene("res://scenes/Menu_principal.tscn")

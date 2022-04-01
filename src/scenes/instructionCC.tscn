@@ -144,13 +144,14 @@ __meta__ = {
 }
 
 [node name="Label7" type="Label" parent="."]
-margin_left = 19.0
-margin_top = 416.0
-margin_right = 1013.0
-margin_bottom = 475.0
+margin_left = 18.0
+margin_top = 398.0
+margin_right = 1012.0
+margin_bottom = 457.0
 custom_colors/font_color = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Faça tudo o mais ràpido possível! Quanto mais ràpido, mais pontos você ganha!"
+text = "Faça tudo o mais ràpido possível! Quanto mais ràpido, mais pontos você ganha!
+Quanto mais botões errados apertados, menos pontos você ganha."
 align = 1
 valign = 1
 __meta__ = {
@@ -195,15 +196,13 @@ __meta__ = {
 }
 
 [node name="Label9" type="Label" parent="."]
-margin_left = 264.0
-margin_top = 506.0
-margin_right = 728.0
-margin_bottom = 584.0
-custom_colors/font_color = Color( 0.0666667, 0.0588235, 0.0588235, 1 )
+margin_left = 257.0
+margin_top = 518.0
+margin_right = 721.0
+margin_bottom = 596.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "Você só poderá apertar 3 botões. 
-Quando isso acontecer, o tempo para
-e você pode sair do minigame."
+text = "Você só poderà apertar 3 botões. "
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,21 +1,9 @@
 extends Node2D
 
-
-
-
+# Ao apertar o botão "Jogar" muda de cena
 func _on_Jogar_pressed():
-	get_tree().change_scene("res://scenes/nivel.tscn")
+	get_tree().change_scene("res://scenes/cutscene.tscn")
 
-
-
-
-
-
-func _on_Som_pressed():
-	pass
-	
-	
-
-
+# Ao apertar o botão "Sair" o jogo fecha
 func _on_Sair_pressed():
 	get_tree().quit()

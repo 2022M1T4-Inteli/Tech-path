@@ -142,7 +142,7 @@ margin_bottom = 472.0
 custom_colors/font_color = Color( 0.898039, 0.905882, 0.0784314, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Faça tudo o mais ràpido possível! Quanto mais ràpido, mais pontos você ganha!
-Se você errar, ganharà menos pontos."
+Se você errar, ganharà uma pontuação fixa menor."
 align = 1
 valign = 1
 __meta__ = {

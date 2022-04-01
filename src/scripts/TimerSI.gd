@@ -29,5 +29,7 @@ func _on_Timer_timeout():
 	Globals.time -= 1
 	# Quando o tempo for zero muda para a tela do bunker
 	if Globals.time == 0:
-		Globals.pointsSistInf = 100
+		Globals.pointsSistInf = 500
+		timer.stop()
+		Globals.time = 180
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")

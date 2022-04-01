@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://scripts/Node2D.gd" type="Script" id=1]
+[ext_resource path="res://scripts/resultSI.gd" type="Script" id=1]
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://scripts/TimerSI.gd" type="Script" id=3]
 [ext_resource path="res://decorations/PixelIntv-OPxd.ttf" type="DynamicFontData" id=4]
@@ -24,9 +24,17 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=8]
+size = 22
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFont" id=6]
 size = 12
 font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 35
+font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -67,6 +75,7 @@ margin_left = 112.0
 margin_top = 125.0
 margin_right = 367.0
 margin_bottom = 146.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Alimentos : 100"
 __meta__ = {
@@ -78,6 +87,7 @@ margin_left = 610.0
 margin_top = 124.0
 margin_right = 865.0
 margin_bottom = 150.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Humanos : 500"
 __meta__ = {
@@ -91,6 +101,9 @@ margin_right = 891.0
 margin_bottom = 259.0
 custom_fonts/font = SubResource( 4 )
 text = "adição (+) subtração (-) multiplicação (*) divisão (/)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="instrucao" type="Label" parent="Textos"]
 margin_left = 145.0
@@ -99,6 +112,33 @@ margin_right = 883.0
 margin_bottom = 338.0
 custom_fonts/font = SubResource( 5 )
 text = "De apenas 1 espaço entre um numero e um sinal Ex: 10 + 10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="instrucao2" type="Label" parent="Textos"]
+margin_left = 265.0
+margin_top = 314.0
+margin_right = 392.0
+margin_bottom = 338.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = " 1 espaço "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="instrucao3" type="Label" parent="Textos"]
+margin_left = 748.0
+margin_top = 314.0
+margin_right = 883.0
+margin_bottom = 338.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "Ex: 10 + 10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextEdit" type="TextEdit" parent="."]
 margin_left = 179.0
@@ -115,6 +155,7 @@ margin_left = 401.0
 margin_top = 441.0
 margin_right = 561.0
 margin_bottom = 465.0
+custom_fonts/font = SubResource( 8 )
 text = "Check"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -135,5 +176,18 @@ __meta__ = {
 
 [node name="Timer" type="Timer" parent="Time"]
 
+[node name="Button9" type="Button" parent="."]
+margin_left = 60.0
+margin_top = 433.0
+margin_right = 188.0
+margin_bottom = 493.0
+custom_fonts/font = SubResource( 7 )
+text = "Sair"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="timeout" from="Time/Timer" to="Time" method="_on_Timer_timeout"]
+[connection signal="pressed" from="Button9" to="." method="_on_Button9_pressed"]

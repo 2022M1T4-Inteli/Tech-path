@@ -4,7 +4,7 @@
 [ext_resource path="res://scripts/character.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 30, 65.5 )
+extents = Vector2( 22.5, 65.5 )
 
 [sub_resource type="Animation" id=2]
 length = 0.4
@@ -66,7 +66,7 @@ texture = ExtResource( 1 )
 hframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -39, -93.5 )
+position = Vector2( -39.5, -93.5 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

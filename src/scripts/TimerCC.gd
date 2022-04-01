@@ -29,19 +29,23 @@ func _process(_delta):
 		# Calcula pontuação se forem selecionados 3 botões corretos
 		if Globals.cButton == 3:
 			Globals.pointsCompSci = time * 5
+			get_tree().change_scene("res://scenes/winCC.tscn")
 		# Calcula pontuação se forem selecionados 3 botões incorretos
 		elif Globals.iButton == 3 and Globals.cButton == 0:
-			Globals.pointsCompSci = 200
+			Globals.pointsCompSci = 500
 			timer.stop()
 			timer_on = false
+			get_tree().change_scene("res://scenes/loseCC.tscn")
 		# Calcula pontuação se forem selecionados 2 botões incorretos e 1 correto
 		elif Globals.button == 3 and Globals.cButton < Globals.iButton:
 			Globals.pointsCompSci = (-1 * Globals.iButton) + (5 * Globals.cButton)
 			Globals.pointsCompSci = time * Globals.pointsCompSci
+			get_tree().change_scene("res://scenes/halfwinCC.tscn")
 		# Calcula pontuação se forem selecionados 1 botão incorreto e 2 corretos
 		elif Globals.button == 3 and Globals.cButton > Globals.iButton:
 			Globals.pointsCompSci = (-1 * Globals.iButton) + (2.5 * Globals.cButton)
 			Globals.pointsCompSci = time * Globals.pointsCompSci
+			get_tree().change_scene("res://scenes/halfwinCC.tscn")
 		
 		# Para o timer quando o número de botões selecionados é 3
 		if Globals.button == 3 or Globals.cButton == 3:
@@ -58,5 +62,7 @@ func _on_Timer_timeout():
 	# Quando o tempo for zero muda para a tela do bunker
 	if time == 0:
 		Globals.pointsCompSci = 100
+		timer.stop()
+		time = 180
 		var _change_scene = get_tree().change_scene("res://scenes/bunker.tscn")
 	
