@@ -35,15 +35,15 @@ func drawGraph(nBar, _maxVal):
 		
 		# Desenho dos retângulos que representam as barras do gráfico
 		draw_rect(Rect2(Vector2((50 + graphSpace) + (0 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[0] * (gridHeight * 5)) / 1000))), Color('f51818'), true)
-		draw_rect(Rect2(Vector2((50 + graphSpace) + (1 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[1] * (gridHeight * 5)) / 1000))), Color('1c18f5'), true)
-		draw_rect(Rect2(Vector2((50 + graphSpace) + (2 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[2] * (gridHeight * 5)) / 1000))), Color('1da82a'), true)
-		draw_rect(Rect2(Vector2((50 + graphSpace) + (3 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[3] * (gridHeight * 5)) / 1000))), Color('f5df18'), true)
+		draw_rect(Rect2(Vector2((50 + graphSpace) + (1 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[1] * (gridHeight * 5)) / 1000))), Color('f5df18'), true)
+		draw_rect(Rect2(Vector2((50 + graphSpace) + (2 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[2] * (gridHeight * 5)) / 1000))), Color('1c18f5'), true)
+		draw_rect(Rect2(Vector2((50 + graphSpace) + (3 * (graphWidth + graphSpace)), winSize.y - 100), Vector2(graphWidth, - ((graphData[3] * (gridHeight * 5)) / 1000))), Color('1da82a'), true)
 		
 		# Escrita do nome de identificação de cada barra
 		draw_string(font1, Vector2(txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Sistema de informação"), Color('f51818'))
-		draw_string(font1, Vector2(210 + txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Ciência da Computação"), Color('1c18f5'))
-		draw_string(font1, Vector2(420 + txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Engenharia de Software"), Color('1da82a'))
-		draw_string(font1, Vector2(620 + txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Engenharia da Computação"), Color('f5df18'))
+		draw_string(font1, Vector2(210 + txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Ciência da Computação"), Color('f5df18'))
+		draw_string(font1, Vector2(420 + txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Engenharia de Software"), Color('1c18f5'))
+		draw_string(font1, Vector2(620 + txtGraphPos.Center, (winSize.y - 100) + spaceText), String("Engenharia da Computação"), Color('1da82a'))
 		
 # Função responsável por criar o gráfico na tela
 func _draw():
