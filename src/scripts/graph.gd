@@ -55,3 +55,14 @@ func _draw():
 
 func _on_Button_pressed():
 	get_tree().change_scene("res://scenes/Menu_principal.tscn")
+
+
+func _on_Link_meta_clicked(meta):
+	OS.shell_open(str(meta))
+
+func _on_Surprise_pressed():
+	$Inteli.popup()
+
+
+func _on_InteliLink_meta_clicked(meta):
+	OS.shell_open(str(meta))

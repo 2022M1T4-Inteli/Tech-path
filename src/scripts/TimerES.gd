@@ -25,13 +25,11 @@ func _process(_delta):
 		text = time_passed
 	
 	# Calcula a pontuação no minigame
-	if Globals.correctOrder == true and Globals.nodeNumber > Globals.nodeNumberMax:
-		Globals.pointsSoftEng = time * 5
-		timer.stop()
-		timer_on = false
-		time = 180
-	else:
-		Globals.pointsSoftEng = 500
+		if Globals.correctOrder == true:
+			Globals.pointsSoftEng = time * 5
+
+		else:
+			Globals.pointsSoftEng = 500
 
 
 func _on_Timer_timeout():
