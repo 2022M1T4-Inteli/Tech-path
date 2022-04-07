@@ -16,4 +16,5 @@ func _on_botao_sair_pressed():
 
 func _on_botao_reset_pressed():
 	get_tree().change_scene("res://scenes/minigame_ES.tscn")
+	Globals.nodeNumber = 0
 	
