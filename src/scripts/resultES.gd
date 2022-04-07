@@ -8,5 +8,12 @@ func show_result():
 		get_tree().change_scene("res://scenes/loseES.tscn")
 
 # Ao apertar o botão volta para o bunker
-func _on_Button9_pressed():
+
+
+func _on_botao_sair_pressed():
 	get_tree().change_scene("res://scenes/bunker.tscn")
+
+
+func _on_botao_reset_pressed():
+	get_tree().change_scene("res://scenes/minigame_ES.tscn")
+	
