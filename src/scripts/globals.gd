@@ -24,6 +24,9 @@ var nodes = ["/root/Node2D/Pos1",
 var nodeNumber = 0
 var nodeNumberMax = len(nodes) - 1
 var correctOrder = true
+var onBar = false
+var inFinalPos = false
+var inBar = false
 
 var objCatchedEC = false
 var nodesEC = ["/root/Node2D/Pos1",

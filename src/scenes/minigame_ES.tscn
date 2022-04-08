@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scripts/globals.gd" type="Script" id=1]
 [ext_resource path="res://scripts/BlocoDeCodigo.gd" type="Script" id=2]
@@ -34,6 +34,9 @@ font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 35
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=9]
 font_data = ExtResource( 11 )
 
 [node name="Node2D" type="Node2D"]
@@ -253,7 +256,11 @@ margin_left = 751.0
 margin_top = 17.0
 margin_right = 852.0
 margin_bottom = 45.0
+custom_fonts/font = SubResource( 9 )
 text = "RESET"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="body_entered" from="BlocoDeCodigo" to="BlocoDeCodigo" method="_on_BlocoDeCodigo_body_entered"]
 [connection signal="body_exited" from="BlocoDeCodigo" to="BlocoDeCodigo" method="_on_BlocoDeCodigo_body_exited"]
