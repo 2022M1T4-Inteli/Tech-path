@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/VoltarButton.gd" type="Script" id=2]
@@ -14,6 +14,9 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=3]
 size = 30
 outline_color = Color( 0.592157, 0.584314, 0.0470588, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 1 )
 
 [node name="Control" type="Control"]
@@ -38,10 +41,10 @@ __meta__ = {
 }
 
 [node name="VoltarButton" type="Button" parent="."]
-margin_left = 443.0
-margin_top = 426.0
-margin_right = 559.0
-margin_bottom = 469.0
+margin_left = 327.0
+margin_top = 408.0
+margin_right = 443.0
+margin_bottom = 451.0
 custom_fonts/font = SubResource( 2 )
 text = "SAIR"
 script = ExtResource( 2 )
@@ -63,14 +66,27 @@ __meta__ = {
 
 [node name="Label3" type="Label" parent="."]
 modulate = Color( 0.976471, 0.101961, 0.101961, 1 )
-margin_left = 320.0
-margin_top = 285.0
-margin_right = 1279.0
-margin_bottom = 360.0
+margin_left = 310.0
+margin_top = 293.0
+margin_right = 1269.0
+margin_bottom = 368.0
 custom_fonts/font = SubResource( 1 )
 text = "0 DE 3 BOTÕES CERTOS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="reset" type="Button" parent="."]
+anchor_bottom = 0.017
+margin_left = 504.0
+margin_top = 405.0
+margin_right = 691.0
+margin_bottom = 446.8
+custom_fonts/font = SubResource( 4 )
+text = "TENTAR NOVAMENTE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="VoltarButton" to="VoltarButton" method="_on_VoltarButton_pressed"]
+[connection signal="pressed" from="reset" to="VoltarButton" method="_on_Button_pressed"]
