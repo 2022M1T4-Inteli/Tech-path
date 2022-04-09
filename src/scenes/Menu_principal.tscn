@@ -19,20 +19,21 @@ font_data = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 1028.0
-margin_bottom = 614.0
+margin_right = 1565.0
+margin_bottom = 811.0
 rect_pivot_offset = Vector2( 148, 319 )
 texture = ExtResource( 5 )
 expand = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="título" type="Label" parent="."]
-margin_left = 233.0
-margin_top = 53.0
-margin_right = 1057.0
-margin_bottom = 204.0
+margin_left = 503.0
+margin_top = 104.0
+margin_right = 1327.0
+margin_bottom = 255.0
 custom_fonts/font = SubResource( 1 )
 text = "Tech path"
 __meta__ = {
@@ -40,10 +41,10 @@ __meta__ = {
 }
 
 [node name="Jogar" type="TextureButton" parent="."]
-margin_left = 355.0
-margin_top = 213.0
-margin_right = 681.0
-margin_bottom = 327.0
+margin_left = 609.0
+margin_top = 299.0
+margin_right = 980.0
+margin_bottom = 442.0
 texture_normal = ExtResource( 3 )
 expand = true
 __meta__ = {
@@ -51,10 +52,10 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Jogar"]
-margin_left = 49.0
-margin_top = 30.0
-margin_right = 372.0
-margin_bottom = 110.0
+margin_left = 73.0
+margin_top = 46.0
+margin_right = 396.0
+margin_bottom = 126.0
 custom_fonts/font = SubResource( 2 )
 text = "Jogar"
 __meta__ = {
@@ -63,10 +64,10 @@ __meta__ = {
 }
 
 [node name="Sair" type="TextureButton" parent="."]
-margin_left = 355.0
-margin_top = 327.0
-margin_right = 681.0
-margin_bottom = 441.0
+margin_left = 608.0
+margin_top = 416.0
+margin_right = 979.0
+margin_bottom = 565.0
 texture_normal = ExtResource( 3 )
 expand = true
 __meta__ = {
@@ -74,10 +75,10 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Sair"]
-margin_left = 79.0
-margin_top = 30.0
-margin_right = 402.0
-margin_bottom = 153.0
+margin_left = 105.0
+margin_top = 44.0
+margin_right = 428.0
+margin_bottom = 167.0
 custom_fonts/font = SubResource( 2 )
 text = "Sair
 "

@@ -1,41 +1,55 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/ButtonInstCC.gd" type="Script" id=2]
 [ext_resource path="res://decorations/atencao.png" type="Texture" id=3]
+[ext_resource path="res://decorations/yellowback4.jpg" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=2]
-size = 30
+size = 50
+outline_size = 4
+outline_color = Color( 0.054902, 0.0431373, 0.0431373, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 30
+size = 50
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 20
-outline_color = Color( 0.94902, 0.156863, 0.156863, 1 )
+size = 50
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 60
+outline_size = 4
+outline_color = Color( 0.0392157, 0.027451, 0.027451, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 19
+size = 25
 outline_color = Color( 0.701961, 0.113725, 0.113725, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=7]
-size = 35
+size = 50
+outline_size = 4
+outline_color = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 30
+outline_size = 4
+outline_color = Color( 0.0862745, 0.0784314, 0.0784314, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 20
+size = 25
+outline_size = 4
+outline_color = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
 font_data = ExtResource( 1 )
 
 [node name="Control" type="Control"]
@@ -45,22 +59,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_right = 1566.0
+margin_bottom = 832.0
+texture = ExtResource( 4 )
+expand = true
 __meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect2" type="ColorRect" parent="."]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 1014.0
-margin_bottom = 591.0
-color = Color( 0.713726, 0.67451, 0.0705882, 1 )
-__meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -74,7 +78,6 @@ text = "O que devo fazer?
 
 "
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -116,10 +119,10 @@ __meta__ = {
 }
 
 [node name="Label5" type="Label" parent="."]
-margin_left = -193.0
-margin_top = 159.0
-margin_right = 1068.0
-margin_bottom = 218.0
+margin_left = -111.0
+margin_top = 179.0
+margin_right = 1150.0
+margin_bottom = 238.0
 custom_colors/font_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Descubra as partes do còdigo para a criação do software"
@@ -130,10 +133,10 @@ __meta__ = {
 }
 
 [node name="Label6" type="Label" parent="."]
-margin_left = -220.0
-margin_top = 285.0
-margin_right = 1041.0
-margin_bottom = 344.0
+margin_left = -168.0
+margin_top = 293.0
+margin_right = 1093.0
+margin_bottom = 352.0
 custom_colors/font_color = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Clique nos botões para verificar se està correto"
@@ -144,10 +147,10 @@ __meta__ = {
 }
 
 [node name="Label7" type="Label" parent="."]
-margin_left = 18.0
-margin_top = 398.0
-margin_right = 1012.0
-margin_bottom = 457.0
+margin_left = 66.0
+margin_top = 446.0
+margin_right = 1291.0
+margin_bottom = 511.0
 custom_colors/font_color = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Faça tudo o mais ràpido possível! Quanto mais ràpido, mais pontos você ganha!
@@ -160,10 +163,10 @@ __meta__ = {
 
 [node name="Button" type="Button" parent="."]
 anchor_bottom = 0.033
-margin_left = 810.0
-margin_top = 492.0
-margin_right = 942.0
-margin_bottom = 520.2
+margin_left = 1288.0
+margin_top = 692.0
+margin_right = 1471.0
+margin_bottom = 731.237
 custom_colors/font_color_disabled = Color( 0.705882, 0.635294, 0.635294, 1 )
 custom_fonts/font = SubResource( 7 )
 text = "Jogar"
@@ -174,10 +177,10 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = 89.0
-margin_top = 464.0
-margin_right = 219.0
-margin_bottom = 576.0
+margin_left = 81.0
+margin_top = 584.0
+margin_right = 293.0
+margin_bottom = 772.0
 texture = ExtResource( 3 )
 expand = true
 __meta__ = {
@@ -185,10 +188,10 @@ __meta__ = {
 }
 
 [node name="Label8" type="Label" parent="."]
-margin_left = 203.0
-margin_top = 470.0
-margin_right = 367.0
-margin_bottom = 506.0
+margin_left = 305.0
+margin_top = 554.0
+margin_right = 469.0
+margin_bottom = 590.0
 custom_fonts/font = SubResource( 8 )
 text = "ATENÇÃO!!"
 __meta__ = {
@@ -196,13 +199,13 @@ __meta__ = {
 }
 
 [node name="Label9" type="Label" parent="."]
-margin_left = 257.0
-margin_top = 518.0
-margin_right = 721.0
-margin_bottom = 596.0
+margin_left = 341.0
+margin_top = 650.0
+margin_right = 862.0
+margin_bottom = 728.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 9 )
-text = "Você só poderà apertar 3 botões. "
+text = "Você sò poderà apertar 3 botões. "
 __meta__ = {
 "_edit_use_anchors_": false
 }

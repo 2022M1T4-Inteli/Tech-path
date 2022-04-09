@@ -1,11 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/VoltarButton.gd" type="Script" id=2]
-[ext_resource path="res://scenes/loseEC.gd" type="Script" id=3]
+[ext_resource path="res://scripts/loseEC.gd" type="Script" id=3]
+[ext_resource path="res://decorations/grayback.jpeg" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -14,7 +17,8 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 30
-outline_color = Color( 0.592157, 0.584314, 0.0470588, 1 )
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -30,12 +34,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1609.0
+margin_bottom = 919.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Label" type="Label" parent="."]
 modulate = Color( 0.976471, 0.101961, 0.101961, 1 )
-margin_left = 30.0
-margin_top = 235.0
-margin_right = 989.0
-margin_bottom = 310.0
+margin_left = 317.0
+margin_top = 298.0
+margin_right = 1284.0
+margin_bottom = 373.0
 custom_fonts/font = SubResource( 1 )
 text = "INFELIZMENTE VOCÊ NÃO CONSEGUIU CONSERTAR O ROBÔ"
 __meta__ = {
@@ -43,10 +56,10 @@ __meta__ = {
 }
 
 [node name="VoltarButton" type="Button" parent="."]
-margin_left = 326.0
-margin_top = 408.0
-margin_right = 442.0
-margin_bottom = 451.0
+margin_left = 675.0
+margin_top = 443.0
+margin_right = 791.0
+margin_bottom = 486.0
 custom_fonts/font = SubResource( 2 )
 text = "SAIR"
 script = ExtResource( 2 )
@@ -55,10 +68,10 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 120.0
-margin_top = 307.0
-margin_right = 906.0
-margin_bottom = 421.0
+margin_left = 403.0
+margin_top = 380.0
+margin_right = 1189.0
+margin_bottom = 494.0
 custom_colors/font_color = Color( 0.607843, 0.615686, 0.639216, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "VÁ PARA O ELEVADOR NO FINAL DO  CORREDOR"
@@ -67,10 +80,10 @@ __meta__ = {
 }
 
 [node name="reset" type="Button" parent="."]
-margin_left = 522.0
-margin_top = 406.0
-margin_right = 709.0
-margin_bottom = 452.0
+margin_left = 841.0
+margin_top = 441.0
+margin_right = 1028.0
+margin_bottom = 487.0
 custom_fonts/font = SubResource( 4 )
 text = "TENTAR NOVAMENTE"
 __meta__ = {

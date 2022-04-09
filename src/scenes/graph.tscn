@@ -48,10 +48,10 @@ font_data = ExtResource( 2 )
 script = ExtResource( 1 )
 
 [node name="title" type="Label" parent="."]
-margin_left = 85.0
-margin_top = 19.0
-margin_right = 942.0
-margin_bottom = 52.0
+margin_left = 385.0
+margin_top = 13.0
+margin_right = 1242.0
+margin_bottom = 46.0
 custom_fonts/font = SubResource( 1 )
 text = "                              Desempenho"
 __meta__ = {
@@ -59,10 +59,10 @@ __meta__ = {
 }
 
 [node name="title2" type="Label" parent="."]
-margin_left = -7.0
-margin_top = 548.0
-margin_right = 898.0
-margin_bottom = 581.0
+margin_left = 340.0
+margin_top = 743.0
+margin_right = 1245.0
+margin_bottom = 776.0
 custom_fonts/font = SubResource( 1 )
 text = "     Clique no nome dos cursos para ver possíveis carreiras"
 __meta__ = {
@@ -70,10 +70,10 @@ __meta__ = {
 }
 
 [node name="obs" type="Label" parent="."]
-margin_left = 63.0
-margin_top = 48.0
-margin_right = 1730.0
-margin_bottom = 109.0
+margin_left = 371.0
+margin_top = 56.0
+margin_right = 2038.0
+margin_bottom = 117.0
 custom_fonts/font = SubResource( 1 )
 text = "OBS: Isso não é um teste vocacional. Ter a maior pontuação 
      não significa que você sò é apto para tal carreira"
@@ -82,10 +82,10 @@ __meta__ = {
 }
 
 [node name="menu" type="Button" parent="."]
-margin_left = 878.0
-margin_top = -4.0
-margin_right = 1000.0
-margin_bottom = 65.0
+margin_left = 1390.0
+margin_top = 4.0
+margin_right = 1512.0
+margin_bottom = 73.0
 custom_fonts/font = SubResource( 2 )
 text = "Menu"
 flat = true
@@ -94,10 +94,10 @@ __meta__ = {
 }
 
 [node name="SI" type="WindowDialog" parent="."]
-margin_left = 103.0
-margin_top = 99.0
-margin_right = 878.0
-margin_bottom = 425.0
+margin_left = 416.0
+margin_top = 205.0
+margin_right = 1191.0
+margin_bottom = 531.0
 custom_colors/title_color = Color( 1, 0, 0, 1 )
 custom_styles/panel = SubResource( 3 )
 script = ExtResource( 3 )
@@ -154,10 +154,10 @@ __meta__ = {
 }
 
 [node name="CC" type="WindowDialog" parent="."]
-margin_left = 102.0
-margin_top = 99.0
-margin_right = 878.0
-margin_bottom = 426.0
+margin_left = 410.0
+margin_top = 214.0
+margin_right = 1186.0
+margin_bottom = 541.0
 custom_styles/panel = SubResource( 4 )
 script = ExtResource( 4 )
 __meta__ = {
@@ -215,10 +215,10 @@ __meta__ = {
 }
 
 [node name="ES" type="WindowDialog" parent="."]
-margin_left = 104.0
-margin_top = 99.0
-margin_right = 877.0
-margin_bottom = 426.0
+margin_left = 430.0
+margin_top = 216.0
+margin_right = 1203.0
+margin_bottom = 543.0
 custom_styles/panel = SubResource( 5 )
 script = ExtResource( 5 )
 __meta__ = {
@@ -273,10 +273,10 @@ __meta__ = {
 }
 
 [node name="EC" type="WindowDialog" parent="."]
-margin_left = 93.0
-margin_top = 98.0
-margin_right = 875.0
-margin_bottom = 426.0
+margin_left = 412.0
+margin_top = 202.0
+margin_right = 1194.0
+margin_bottom = 530.0
 custom_styles/panel = SubResource( 6 )
 script = ExtResource( 6 )
 
@@ -342,10 +342,10 @@ __meta__ = {
 }
 
 [node name="Inteli" type="WindowDialog" parent="."]
-margin_left = 118.0
-margin_top = 119.0
-margin_right = 847.0
-margin_bottom = 535.0
+margin_left = 446.0
+margin_top = 164.0
+margin_right = 1175.0
+margin_bottom = 580.0
 custom_styles/panel = SubResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false

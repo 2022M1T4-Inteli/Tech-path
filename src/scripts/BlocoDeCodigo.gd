@@ -27,13 +27,13 @@ func _physics_process(_delta):
 		# caso a peça não esteja sobre a barra e o botão do mouse estiver pressionado, o objeto vai seguir o mouse
 		if mouse && Input.is_mouse_button_pressed(1):
 			self.position = mouse_pos
-		# se o botão no mouse não estiver pressionado e a peça estiver fora da barra ela retornará á posição original
+		# se o botão no mouse não estiver pressionado e a peça estiver fora da barra ela retornará  posição original
 		else:
 			self.position = defaultPosition
 			
 	# Mostra o resultado se o número de nós é maior do que o valor máximo
 	if Globals.nodeNumber > Globals.nodeNumberMax:
-		get_tree().get_root().get_node("Node2D").show_result()
+		get_tree().get_root().get_node("Node2D2").show_result()
 
 # faz o mouse pegar o objeto
 func _on_Area2D_mouse_entered():

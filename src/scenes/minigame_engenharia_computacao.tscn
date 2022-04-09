@@ -38,10 +38,14 @@ font_data = ExtResource( 16 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 12
+outline_size = 2
+outline_color = Color( 0.054902, 0.0509804, 0.0509804, 1 )
 font_data = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 22
+outline_size = 3
+outline_color = Color( 0.0392157, 0.0352941, 0.0352941, 1 )
 font_data = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=11]
@@ -51,23 +55,23 @@ font_data = ExtResource( 16 )
 script = ExtResource( 6 )
 
 [node name="Kisspng-robot-enter-the-gungeon-pixel-art-kinetic-art-5B04448Cf2C7E43274136015270063489944-removebg-preview" type="Sprite" parent="."]
-position = Vector2( 511, 343 )
+position = Vector2( 800, 347 )
 texture = ExtResource( 5 )
 
 [node name="Pos1" type="Node2D" parent="."]
-position = Vector2( 622, 340 )
+position = Vector2( 909, 346 )
 
 [node name="Pos2" type="Node2D" parent="."]
-position = Vector2( 525, 224 )
+position = Vector2( 812, 230 )
 
 [node name="Pos3" type="Node2D" parent="."]
-position = Vector2( 529, 467 )
+position = Vector2( 816, 473 )
 
 [node name="Pos4" type="Node2D" parent="."]
-position = Vector2( 439, 341 )
+position = Vector2( 726, 347 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["Barra"]]
-position = Vector2( 458, 324 )
+position = Vector2( 745, 330 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D" groups=["Barra"]]
 position = Vector2( 55, 40 )
@@ -118,27 +122,27 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 618, 338 )
+position = Vector2( 899.375, 345.625 )
 scale = Vector2( 0.651733, 0.625691 )
 texture = ExtResource( 7 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 529, 219 )
+position = Vector2( 810.375, 226.625 )
 scale = Vector2( 0.651733, 0.625691 )
 texture = ExtResource( 11 )
 
 [node name="Sprite3" type="Sprite" parent="."]
-position = Vector2( 530, 465 )
+position = Vector2( 811.375, 472.625 )
 scale = Vector2( 0.651733, 0.625691 )
 texture = ExtResource( 12 )
 
 [node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( 442, 338 )
+position = Vector2( 723.375, 345.625 )
 scale = Vector2( 0.651733, 0.625691 )
 texture = ExtResource( 8 )
 
 [node name="BlocoDeCodigo" type="Area2D" parent="."]
-position = Vector2( 194, 246 )
+position = Vector2( 475, 259 )
 scale = Vector2( 2.39202, 2.12999 )
 script = ExtResource( 2 )
 blockType = "0"
@@ -164,7 +168,7 @@ __meta__ = {
 }
 
 [node name="BlocoDeCodigo2" type="Area2D" parent="."]
-position = Vector2( 830.001, 236 )
+position = Vector2( 1111, 249 )
 script = ExtResource( 2 )
 blockType = "1"
 
@@ -189,7 +193,7 @@ __meta__ = {
 }
 
 [node name="BlocoDeCodigo3" type="Area2D" parent="."]
-position = Vector2( 194, 440 )
+position = Vector2( 475, 453 )
 script = ExtResource( 2 )
 blockType = "2"
 
@@ -213,7 +217,7 @@ __meta__ = {
 }
 
 [node name="BlocoDeCodigo4" type="Area2D" parent="."]
-position = Vector2( 829, 428 )
+position = Vector2( 1110, 441 )
 script = ExtResource( 2 )
 blockType = "3"
 
@@ -237,10 +241,10 @@ __meta__ = {
 }
 
 [node name="check" type="Button" parent="."]
-margin_left = 464.0
-margin_top = 44.0
-margin_right = 579.0
-margin_bottom = 87.0
+margin_left = 751.0
+margin_top = 38.0
+margin_right = 866.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 10 )
 text = "CHECK"
 __meta__ = {
@@ -248,10 +252,10 @@ __meta__ = {
 }
 
 [node name="Time" type="Label" parent="."]
-margin_left = 904.0
-margin_top = 18.0
-margin_right = 945.0
-margin_bottom = 39.0
+margin_left = 1393.0
+margin_top = 26.0
+margin_right = 1435.0
+margin_bottom = 47.0
 rect_scale = Vector2( 2, 2 )
 custom_fonts/font = SubResource( 8 )
 text = "03:00"
@@ -269,16 +273,17 @@ margin_right = 146.0
 margin_bottom = 76.0
 custom_fonts/font = SubResource( 9 )
 text = "SAIR"
+flat = true
 script = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="reset" type="Button" parent="."]
-margin_left = 467.0
-margin_top = 541.0
-margin_right = 586.0
-margin_bottom = 580.0
+margin_left = 756.0
+margin_top = 677.0
+margin_right = 875.0
+margin_bottom = 716.0
 rect_scale = Vector2( 1.2, 1.2 )
 custom_fonts/font = SubResource( 11 )
 text = "RESET"
