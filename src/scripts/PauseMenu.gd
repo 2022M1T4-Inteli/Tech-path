@@ -25,5 +25,5 @@ func _on_QuitBtn_pressed():
 	
 # Ao apertar o botão volta para o menu
 func _on_VoltarMenuBtn_pressed():
-	get_tree().change_scene("res://scenes/Menu_principal.tscn")
+	var _changeScene = get_tree().change_scene("res://scenes/mainMenu.tscn")
 

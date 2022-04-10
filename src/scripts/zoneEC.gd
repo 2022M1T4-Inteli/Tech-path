@@ -58,4 +58,4 @@ func _on_BlocoDeCodigo_body_exited(body):
 # Mostra o resultado se o número de nós é maior do que o valor máximo
 func _on_check_pressed():
 	if Globals.nodeNumberEC > Globals.nodeNumberMaxEC:
-		get_tree().get_root().get_node("Node2D").show_result()
+		var _changeScene = get_tree().get_root().get_node("Node2D").show_result()

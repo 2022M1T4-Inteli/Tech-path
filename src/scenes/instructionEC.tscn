@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://decorations/atencao.png" type="Texture" id=1]
-[ext_resource path="res://scripts/Button_jogar.gd" type="Script" id=2]
+[ext_resource path="res://scripts/buttonInstEC.gd" type="Script" id=2]
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://decorations/greenback.png" type="Texture" id=4]
 
@@ -141,7 +141,7 @@ margin_bottom = 381.0
 custom_colors/font_color = Color( 0.898039, 0.905882, 0.0784314, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "Com o mouse, arraste os objetos até o lugar correspondente. 
-Quando terminar, clique no botão CHECK para conferir sua resposta."
+Quando terminar, clique no botão CHECAR para conferir sua resposta."
 align = 1
 valign = 1
 __meta__ = {

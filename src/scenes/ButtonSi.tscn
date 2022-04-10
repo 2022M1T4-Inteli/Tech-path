@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://decorations/exclamationpoint-removebg-preview.png" type="Texture" id=1]
-[ext_resource path="res://scripts/ButtonSI.gd" type="Script" id=2]
+[ext_resource path="res://scripts/buttonSI.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 49.0102

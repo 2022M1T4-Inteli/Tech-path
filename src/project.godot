@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="1.5"
-run/main_scene="res://scenes/Menu_principal.tscn"
+run/main_scene="res://scenes/mainMenu.tscn"
 config/icon="res://icon.png"
 
 [autoload]

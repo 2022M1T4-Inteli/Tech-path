@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scripts/VoltarButton.gd" type="Script" id=2]
+[ext_resource path="res://scripts/backButton.gd" type="Script" id=2]
 [ext_resource path="res://decorations/grayback.jpeg" type="Texture" id=3]
+[ext_resource path="res://scripts/loseES.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -30,6 +31,7 @@ margin_left = 8.0
 margin_top = 10.0
 margin_right = 8.0
 margin_bottom = 10.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -91,4 +93,4 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="VoltarButton" to="VoltarButton" method="_on_VoltarButton_pressed"]
-[connection signal="pressed" from="reset" to="VoltarButton" method="_on_reset_pressed"]
+[connection signal="pressed" from="reset" to="." method="_on_reset_pressed"]

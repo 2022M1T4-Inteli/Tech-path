@@ -11,15 +11,15 @@ func _on_Button_pressed():
 		Globals.time = 180
 	# Incorreto: pontuação fixa e muda de cena
 	else: 
-		var _change_scene2 = get_tree().change_scene("res://scenes/loseSI.tscn")
+		var _change_scene = get_tree().change_scene("res://scenes/loseSI.tscn")
 		Globals.pointsSistInf = 500
 		Globals.time = 180
 
 # Muda de cena quando pressionado o botão
 func _on_VoltarButton_pressed():
-	var _change_scene2 = get_tree().change_scene("res://Node2D.tscn")
+	var _change_scene = get_tree().change_scene("res://Node2D.tscn")
 
 
 # Ao apertar o botão volta para o bunker
 func _on_Button9_pressed():
-	get_tree().change_scene("res://scenes/bunker.tscn")
+	var _changeScene = get_tree().change_scene("res://scenes/bunker.tscn")

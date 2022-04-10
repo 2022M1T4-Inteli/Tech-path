@@ -3,9 +3,9 @@ extends Node2D
 # Se estiver correto muda para a cena de ganhar. Senão muda para a cena de perder
 func show_result():
 	if Globals.correctOrderEC == true:
-		get_tree().change_scene("res://scenes/winEC.tscn")
+		var _changeScene = get_tree().change_scene("res://scenes/winEC.tscn")
 	else:
-		get_tree().change_scene("res://scenes/loseEC.tscn")
+		var _changeScene = get_tree().change_scene("res://scenes/loseEC.tscn")
 	Globals.objCatchedEC = false
 	Globals.nodesEC = ["/root/Node2D/Pos1",
 		"/root/Node2D/Pos2",
@@ -19,5 +19,5 @@ func show_result():
 
 
 func _on_reset_pressed():
-	get_tree().change_scene("res://scenes/minigame_engenharia_computacao.tscn")
+	var _changeScene = get_tree().change_scene("res://scenes/minigameComputerEngineering.tscn")
 	Globals.nodeNumberEC = 0

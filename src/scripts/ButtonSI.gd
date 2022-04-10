@@ -3,8 +3,8 @@ extends StaticBody2D
 var active = false
 
 func _input(_ev):
-	# Muda de cena quando pressionada a tecla "V" apenas na área específica
-	if Input.is_action_pressed("ui_accept") and active:
+	# Muda de cena quando pressionada a tecla "Espaço" apenas na área específica
+	if Input.is_action_pressed("ui_select") and active:
 		var _changeScene = get_tree().change_scene("res://scenes/instructionSI.tscn")
 
 # o objeto fica vísivel em uma área específica

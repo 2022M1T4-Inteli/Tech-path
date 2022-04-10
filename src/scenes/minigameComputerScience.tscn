@@ -1,0 +1,272 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/computerScience.gd" type="Script" id=1]
+[ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://decorations/tvedge.png" type="Texture" id=3]
+[ext_resource path="res://scripts/timerCC.gd" type="Script" id=4]
+[ext_resource path="res://decorations/PixelIntv-OPxd.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 25
+outline_color = Color( 0.701961, 0.113725, 0.113725, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -119.0
+margin_top = -76.0
+margin_right = 1700.0
+margin_bottom = 988.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 686.0
+margin_top = 419.0
+margin_right = 828.0
+margin_bottom = 471.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Button"]
+visible = false
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 140.0
+margin_bottom = 50.0
+color = Color( 0.0117647, 0.356863, 0.0745098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button"]
+margin_left = 23.0
+margin_top = 10.0
+margin_right = 77.0
+margin_bottom = 41.0
+text = "alimento = 100
+humanos = 500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 435.0
+margin_top = 179.0
+margin_right = 673.0
+margin_bottom = 213.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Button2"]
+visible = false
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 236.0
+margin_bottom = 31.0
+color = Color( 0.0117647, 0.356863, 0.0745098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button2"]
+margin_left = 13.0
+margin_top = 10.0
+margin_right = 222.0
+margin_bottom = 41.0
+text = "resultado = alimento  / humanos"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 485.0
+margin_top = 538.0
+margin_right = 619.0
+margin_bottom = 572.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Button3"]
+visible = false
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 132.0
+margin_bottom = 32.0
+color = Color( 0.0117647, 0.356863, 0.0745098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button3"]
+margin_left = 18.0
+margin_top = 10.0
+margin_right = 120.0
+margin_bottom = 41.0
+text = "print (resultado)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 952.0
+margin_top = 509.0
+margin_right = 1090.0
+margin_bottom = 554.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Button4"]
+visible = false
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 135.0
+margin_bottom = 43.0
+color = Color( 0.972549, 0.0196078, 0.0196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button4"]
+margin_left = 18.0
+margin_top = 9.0
+margin_right = 122.0
+margin_bottom = 40.0
+text = "alimentos = 500
+humanos = 100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 853.0
+margin_top = 280.0
+margin_right = 1017.0
+margin_bottom = 314.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Button5"]
+visible = false
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 160.0
+margin_bottom = 31.0
+color = Color( 0.972549, 0.0196078, 0.0196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button5"]
+margin_left = 12.0
+margin_top = 9.0
+margin_right = 152.0
+margin_bottom = 40.0
+text = "resultado is 100 / 500
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 383.0
+margin_top = 366.0
+margin_right = 519.0
+margin_bottom = 400.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Button6"]
+visible = false
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 135.0
+margin_bottom = 32.0
+color = Color( 0.972549, 0.0196078, 0.0196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button6"]
+margin_left = 12.0
+margin_top = 8.0
+margin_right = 126.0
+margin_bottom = 39.0
+text = "print (\"resultado\")"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button9" type="Button" parent="."]
+margin_left = 1286.0
+margin_top = 625.0
+margin_right = 1414.0
+margin_bottom = 685.0
+custom_fonts/font = SubResource( 1 )
+text = "Sair"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="Label" parent="."]
+margin_left = 1257.0
+margin_top = 104.0
+margin_right = 1299.0
+margin_bottom = 125.0
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = SubResource( 2 )
+text = "03:00"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="Time"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 120.0
+margin_top = 78.0
+margin_right = 1381.0
+margin_bottom = 143.0
+custom_colors/font_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Descubra as partes do còdigo para a criação do software 
+Clique nos botões para verificar se està correto"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_Button9_pressed"]
+[connection signal="timeout" from="Time/Timer" to="Time" method="_on_Timer_timeout"]
