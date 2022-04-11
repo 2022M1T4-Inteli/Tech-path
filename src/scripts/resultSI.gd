@@ -5,7 +5,7 @@ func _on_Button_pressed():
 
 	var equacao = String($TextEdit.text)
 	# Correto: calcula a pontuação e muda de cena
-	if equacao == "100 / 500": 
+	if equacao == "100 / 500" or equacao == "100/500": 
 		var _change_scene = get_tree().change_scene("res://scenes/winSI.tscn")
 		Globals.pointsSistInf = Globals.time * 5
 		Globals.time = 180

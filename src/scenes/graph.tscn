@@ -146,6 +146,9 @@ margin_left = 461.0
 margin_top = 249.0
 margin_right = 659.0
 margin_bottom = 677.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CC" type="WindowDialog" parent="."]
 margin_left = 410.0
@@ -174,7 +177,6 @@ text = "Estas carreiras estão diretamente ligadas a graduação neste curso, ma
 - Designer de games
 - Desenvolvedor de games
 - Engenheiro de Machine Learning
-- Testador de penetração
 - Engenheiro de Software
 - Analista de Sistemas
 - Designer UX
@@ -203,6 +205,9 @@ margin_left = 672.0
 margin_top = 261.0
 margin_right = 870.0
 margin_bottom = 673.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ES" type="WindowDialog" parent="."]
 margin_left = 430.0

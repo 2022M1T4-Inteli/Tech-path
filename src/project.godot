@@ -93,6 +93,8 @@ Globals="*res://scripts/globals.gd"
 window/size/width=1565
 window/size/height=811
 window/size/fullscreen=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [editor_plugins]
 

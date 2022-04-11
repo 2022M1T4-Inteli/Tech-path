@@ -125,37 +125,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="instrucao" type="Label" parent="Textos"]
-margin_left = 145.0
-margin_top = 314.0
-margin_right = 883.0
-margin_bottom = 338.0
-custom_fonts/font = SubResource( 5 )
-text = "De apenas 1 espaço entre um numero e um sinal Ex: 10 + 10"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="instrucao2" type="Label" parent="Textos"]
-margin_left = 265.0
-margin_top = 314.0
-margin_right = 392.0
-margin_bottom = 338.0
+margin_left = 293.0
+margin_top = 315.0
+margin_right = 676.0
+margin_bottom = 339.0
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 5 )
-text = " 1 espaço "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="instrucao3" type="Label" parent="Textos"]
-margin_left = 748.0
-margin_top = 314.0
-margin_right = 883.0
-margin_bottom = 338.0
-custom_colors/font_color = Color( 1, 0, 0, 1 )
-custom_fonts/font = SubResource( 5 )
-text = "Ex: 10 + 10"
+text = "Não aperte Enter apòs digitar"
 __meta__ = {
 "_edit_use_anchors_": false
 }
