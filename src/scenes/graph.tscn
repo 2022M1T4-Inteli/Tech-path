@@ -143,9 +143,9 @@ __meta__ = {
 
 [node name="SI button" type="ToolButton" parent="."]
 margin_left = 461.0
-margin_top = 279.0
+margin_top = 249.0
 margin_right = 659.0
-margin_bottom = 707.0
+margin_bottom = 677.0
 
 [node name="CC" type="WindowDialog" parent="."]
 margin_left = 410.0
@@ -200,9 +200,9 @@ __meta__ = {
 
 [node name="CC button" type="ToolButton" parent="."]
 margin_left = 672.0
-margin_top = 291.0
+margin_top = 261.0
 margin_right = 870.0
-margin_bottom = 703.0
+margin_bottom = 673.0
 
 [node name="ES" type="WindowDialog" parent="."]
 margin_left = 430.0
@@ -254,9 +254,9 @@ __meta__ = {
 
 [node name="ES button" type="ToolButton" parent="."]
 margin_left = 880.0
-margin_top = 301.0
+margin_top = 271.0
 margin_right = 1078.0
-margin_bottom = 702.0
+margin_bottom = 672.0
 
 [node name="EC" type="WindowDialog" parent="."]
 margin_left = 412.0
@@ -305,9 +305,12 @@ __meta__ = {
 
 [node name="EC button" type="ToolButton" parent="."]
 margin_left = 1091.0
-margin_top = 293.0
+margin_top = 256.0
 margin_right = 1291.0
-margin_bottom = 705.0
+margin_bottom = 668.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Surprise" type="ToolButton" parent="."]
 margin_left = 17.0
