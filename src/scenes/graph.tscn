@@ -9,6 +9,8 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 27
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=3]
@@ -309,9 +311,9 @@ margin_bottom = 705.0
 
 [node name="Surprise" type="ToolButton" parent="."]
 margin_left = 17.0
-margin_top = 9.0
+margin_top = 19.0
 margin_right = 231.0
-margin_bottom = 50.0
+margin_bottom = 60.0
 custom_fonts/font = SubResource( 7 )
 custom_styles/hover = SubResource( 11 )
 custom_styles/normal = SubResource( 8 )

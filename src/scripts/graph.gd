@@ -27,23 +27,23 @@ func drawGraph(nBar, _maxVal):
 	# Criação dos números do eixo y
 	for a in range(6):
 		
-		draw_string(font1, Vector2(400, (winSize.y - 450) - int(a * gridHeight)), String(int((a * 1000)/5)), Color('575757'))
+		draw_string(font1, Vector2(400, (winSize.y + 10) - int(a * gridHeight)), String(int((a * 1000)/5)), Color('575757'))
 		
 		# Criação dos valores de cada barra
 		for i in range(4):
-			draw_string(font1, Vector2((450 + graphSpace) + (i * (graphWidth + graphSpace)) + txtGraphPos.Center, (winSize.y - 400) - int((graphData[i] * (gridHeight * 5)) / 1000) - spaceText), String(str(int(graphData[i]))), Color(0,0,0))
+			draw_string(font1, Vector2((450 + graphSpace) + (i * (graphWidth + graphSpace)) + txtGraphPos.Center, (winSize.y - 10) - int((graphData[i] * (gridHeight * 5)) / 1000) - spaceText), String(str(int(graphData[i]))), Color(0,0,0))
 		
 		# Desenho dos retângulos que representam as barras do gráfico
-		draw_rect(Rect2(Vector2((450 + graphSpace) + (0 * (graphWidth + graphSpace)), winSize.y - 400), Vector2(graphWidth, - ((graphData[0] * (gridHeight * 5)) / 1000))), Color('f51818'), true)
-		draw_rect(Rect2(Vector2((450 + graphSpace) + (1 * (graphWidth + graphSpace)), winSize.y - 400), Vector2(graphWidth, - ((graphData[1] * (gridHeight * 5)) / 1000))), Color('f5df18'), true)
-		draw_rect(Rect2(Vector2((450 + graphSpace) + (2 * (graphWidth + graphSpace)), winSize.y - 400), Vector2(graphWidth, - ((graphData[2] * (gridHeight * 5)) / 1000))), Color('1c18f5'), true)
-		draw_rect(Rect2(Vector2((450 + graphSpace) + (3 * (graphWidth + graphSpace)), winSize.y - 400), Vector2(graphWidth, - ((graphData[3] * (gridHeight * 5)) / 1000))), Color('1da82a'), true)
+		draw_rect(Rect2(Vector2((450 + graphSpace) + (0 * (graphWidth + graphSpace)), winSize.y + 10), Vector2(graphWidth, - ((graphData[0] * (gridHeight * 5)) / 1000))), Color('f51818'), true)
+		draw_rect(Rect2(Vector2((450 + graphSpace) + (1 * (graphWidth + graphSpace)), winSize.y + 10), Vector2(graphWidth, - ((graphData[1] * (gridHeight * 5)) / 1000))), Color('f5df18'), true)
+		draw_rect(Rect2(Vector2((450 + graphSpace) + (2 * (graphWidth + graphSpace)), winSize.y + 10), Vector2(graphWidth, - ((graphData[2] * (gridHeight * 5)) / 1000))), Color('1c18f5'), true)
+		draw_rect(Rect2(Vector2((450 + graphSpace) + (3 * (graphWidth + graphSpace)), winSize.y + 10), Vector2(graphWidth, - ((graphData[3] * (gridHeight * 5)) / 1000))), Color('1da82a'), true)
 		
 		# Escrita do nome de identificação de cada barra
-		draw_string(font1, Vector2(400 + txtGraphPos.Center, (winSize.y - 400) + spaceText), String("Sistema de informação"), Color('f51818'))
-		draw_string(font1, Vector2(605 + txtGraphPos.Center, (winSize.y - 400) + spaceText), String("Ciência da Computação"), Color('f5df18'))
-		draw_string(font1, Vector2(815 + txtGraphPos.Center, (winSize.y - 400) + spaceText), String("Engenharia de Software"), Color('1c18f5'))
-		draw_string(font1, Vector2(1015 + txtGraphPos.Center, (winSize.y - 400) + spaceText), String("Engenharia da Computação"), Color('1da82a'))
+		draw_string(font1, Vector2(400 + txtGraphPos.Center, (winSize.y + 10) + spaceText), String("Sistema de informação"), Color('f51818'))
+		draw_string(font1, Vector2(605 + txtGraphPos.Center, (winSize.y + 10) + spaceText), String("Ciência da Computação"), Color('f5df18'))
+		draw_string(font1, Vector2(815 + txtGraphPos.Center, (winSize.y + 10) + spaceText), String("Engenharia de Software"), Color('1c18f5'))
+		draw_string(font1, Vector2(1015 + txtGraphPos.Center, (winSize.y + 10) + spaceText), String("Engenharia da Computação"), Color('1da82a'))
 		
 # Função responsável por criar o gráfico na tela
 func _draw():
