@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://floor_decoration.tres" type="TileSet" id=1]
 [ext_resource path="res://wall.tres" type="TileSet" id=2]
@@ -194,11 +194,6 @@ extents = Vector2( 10.5, 18 )
 size = 35
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 24 )
-
-[sub_resource type="DynamicFont" id=20]
-size = 22
-outline_color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
 font_data = ExtResource( 24 )
 
 [sub_resource type="DynamicFont" id=21]
@@ -674,18 +669,6 @@ margin_bottom = 140.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 31 )
 
-[node name="Label" type="Label" parent="controles/TextureRect3"]
-margin_left = 120.0
-margin_top = 150.0
-margin_right = 210.0
-margin_bottom = 177.0
-custom_colors/font_color = Color( 0.0470588, 0.0392157, 0.0392157, 1 )
-custom_fonts/font = SubResource( 20 )
-text = "Espaço"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Label2" type="Label" parent="controles"]
 margin_left = 241.0
 margin_top = -168.0
@@ -694,6 +677,9 @@ margin_bottom = -137.0
 rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 21 )
 text = "Interações -                   (robôs do mapa, elevador e entrar nos minigames):"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label3" type="Label" parent="controles"]
 margin_left = 288.0

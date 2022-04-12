@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scripts/globals.gd" type="Script" id=1]
 [ext_resource path="res://scripts/zoneEC.gd" type="Script" id=2]
@@ -49,12 +49,17 @@ outline_color = Color( 0.0392157, 0.0352941, 0.0352941, 1 )
 font_data = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=11]
+size = 22
 font_data = ExtResource( 16 )
 
 [sub_resource type="DynamicFont" id=12]
 size = 25
 outline_size = 4
 outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 22
 font_data = ExtResource( 16 )
 
 [node name="Node2D" type="Node2D"]
@@ -248,9 +253,9 @@ __meta__ = {
 }
 
 [node name="check" type="Button" parent="."]
-margin_left = 759.0
+margin_left = 620.0
 margin_top = 734.0
-margin_right = 874.0
+margin_right = 735.0
 margin_bottom = 777.0
 custom_fonts/font = SubResource( 10 )
 text = "CHECAR"
@@ -291,7 +296,6 @@ margin_left = 1228.0
 margin_top = 143.0
 margin_right = 1347.0
 margin_bottom = 182.0
-rect_scale = Vector2( 1.2, 1.2 )
 custom_fonts/font = SubResource( 11 )
 text = "RESETAR"
 __meta__ = {
@@ -309,6 +313,17 @@ text = "Com o mouse, arraste os objetos até o lugar correspondente.
 Quando terminar, clique no botão CHECAR para conferir sua resposta."
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tips" type="Button" parent="."]
+margin_left = 892.0
+margin_top = 737.0
+margin_right = 992.0
+margin_bottom = 777.0
+custom_fonts/font = SubResource( 13 )
+text = "DICAS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -333,3 +348,4 @@ __meta__ = {
 [connection signal="timeout" from="Time/Timer" to="Time" method="_on_Timer_timeout"]
 [connection signal="pressed" from="back" to="back" method="_on_back_pressed"]
 [connection signal="pressed" from="reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="Tips" to="." method="_on_Tips_pressed"]

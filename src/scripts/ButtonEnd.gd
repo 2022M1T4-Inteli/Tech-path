@@ -5,7 +5,8 @@ var active = false
 # o objeto fica vísivel em uma área específica
 func _on_Area2D_area_entered(_area):
 	self.visible = true
-	active = true
+	if Globals.end == true:
+		active = true
 	
 # o objeto fica invísivel quando sai de uma área específica
 func _on_Area2D_area_exited(_area):

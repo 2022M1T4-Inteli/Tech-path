@@ -36,8 +36,8 @@ __meta__ = {
 [node name="Button" type="Button" parent="."]
 margin_left = 686.0
 margin_top = 419.0
-margin_right = 828.0
-margin_bottom = 471.0
+margin_right = 857.0
+margin_bottom = 477.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -58,6 +58,7 @@ margin_left = 23.0
 margin_top = 10.0
 margin_right = 77.0
 margin_bottom = 41.0
+rect_scale = Vector2( 1.3, 1.3 )
 text = "alimento = 100
 humanos = 500"
 __meta__ = {
@@ -67,7 +68,7 @@ __meta__ = {
 [node name="Button2" type="Button" parent="."]
 margin_left = 435.0
 margin_top = 179.0
-margin_right = 673.0
+margin_right = 728.0
 margin_bottom = 213.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -89,6 +90,7 @@ margin_left = 13.0
 margin_top = 10.0
 margin_right = 222.0
 margin_bottom = 41.0
+rect_scale = Vector2( 1.3, 1.3 )
 text = "resultado = alimento  / humanos"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -97,7 +99,7 @@ __meta__ = {
 [node name="Button3" type="Button" parent="."]
 margin_left = 485.0
 margin_top = 538.0
-margin_right = 619.0
+margin_right = 646.0
 margin_bottom = 572.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -119,6 +121,7 @@ margin_left = 18.0
 margin_top = 10.0
 margin_right = 120.0
 margin_bottom = 41.0
+rect_scale = Vector2( 1.3, 1.3 )
 text = "print (resultado)"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -127,8 +130,8 @@ __meta__ = {
 [node name="Button4" type="Button" parent="."]
 margin_left = 952.0
 margin_top = 509.0
-margin_right = 1090.0
-margin_bottom = 554.0
+margin_right = 1122.0
+margin_bottom = 566.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -149,6 +152,7 @@ margin_left = 18.0
 margin_top = 9.0
 margin_right = 122.0
 margin_bottom = 40.0
+rect_scale = Vector2( 1.3, 1.3 )
 text = "alimentos = 500
 humanos = 100"
 __meta__ = {
@@ -158,7 +162,7 @@ __meta__ = {
 [node name="Button5" type="Button" parent="."]
 margin_left = 853.0
 margin_top = 280.0
-margin_right = 1017.0
+margin_right = 1060.0
 margin_bottom = 314.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -180,6 +184,7 @@ margin_left = 12.0
 margin_top = 9.0
 margin_right = 152.0
 margin_bottom = 40.0
+rect_scale = Vector2( 1.3, 1.3 )
 text = "resultado is 100 / 500
 "
 __meta__ = {
@@ -189,7 +194,7 @@ __meta__ = {
 [node name="Button6" type="Button" parent="."]
 margin_left = 383.0
 margin_top = 366.0
-margin_right = 519.0
+margin_right = 555.0
 margin_bottom = 400.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -211,6 +216,7 @@ margin_left = 12.0
 margin_top = 8.0
 margin_right = 126.0
 margin_bottom = 39.0
+rect_scale = Vector2( 1.3, 1.3 )
 text = "print (\"resultado\")"
 __meta__ = {
 "_edit_use_anchors_": false

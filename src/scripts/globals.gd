@@ -40,3 +40,8 @@ var nodeNumberMaxEC = len(nodesEC) - 1
 var correctOrderEC = true
 
 
+var npc1BarrierDisabled = false
+
+var end = false
+
+

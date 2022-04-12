@@ -4,8 +4,10 @@ extends Node2D
 func show_result():
 	if Globals.correctOrderEC == true:
 		var _changeScene = get_tree().change_scene("res://scenes/winEC.tscn")
+		Globals.end = true
 	else:
 		var _changeScene = get_tree().change_scene("res://scenes/loseEC.tscn")
+		Globals.end = true
 	Globals.objCatchedEC = false
 	Globals.nodesEC = ["/root/Node2D/Pos1",
 		"/root/Node2D/Pos2",
@@ -21,3 +23,7 @@ func show_result():
 func _on_reset_pressed():
 	var _changeScene = get_tree().change_scene("res://scenes/minigameComputerEngineering.tscn")
 	Globals.nodeNumberEC = 0
+
+
+func _on_Tips_pressed():
+	var _changeScene = get_tree().change_scene("res://scenes/tipsMinigameComputerEngineering.tscn")

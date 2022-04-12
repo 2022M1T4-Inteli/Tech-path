@@ -1,0 +1,173 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/loseEC.gd" type="Script" id=1]
+[ext_resource path="res://decorations/yellowback4.jpg" type="Texture" id=2]
+[ext_resource path="res://PixelIntv-OPxd.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_right = 1566.0
+margin_bottom = 832.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Function1" type="Label" parent="."]
+margin_left = 38.0
+margin_top = 147.0
+margin_right = 694.0
+margin_bottom = 178.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "1. Tudo começa com o processamento de dados."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Function2" type="Label" parent="."]
+margin_left = 37.0
+margin_top = 202.0
+margin_right = 1178.0
+margin_bottom = 233.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "2. Depois o robô deve armazenar as informações recebidas e processadas."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Function3" type="Label" parent="."]
+margin_left = 40.0
+margin_top = 259.0
+margin_right = 1035.0
+margin_bottom = 290.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "3. Para cumprir sua função o robô deve executar um programa."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Function4" type="Label" parent="."]
+margin_left = 41.0
+margin_top = 321.0
+margin_right = 953.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "4. Por fim, ele deve mostar as informações para o usuàrio."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Software" type="Label" parent="."]
+margin_left = 39.0
+margin_top = 489.0
+margin_right = 1279.0
+margin_bottom = 520.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "O software é o programa que serà executado pelo computador, nesse caso o robô"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Process" type="Label" parent="."]
+margin_left = 39.0
+margin_top = 536.0
+margin_right = 1496.0
+margin_bottom = 601.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "O processador interage e faz as conexões necessàrias entre todos os programas instalados."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Display" type="Label" parent="."]
+margin_left = 42.0
+margin_top = 586.0
+margin_right = 991.0
+margin_bottom = 617.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "O display é a tela do robô."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Memory" type="Label" parent="."]
+margin_left = 43.0
+margin_top = 637.0
+margin_right = 1270.0
+margin_bottom = 702.0
+rect_pivot_offset = Vector2( 130, 16 )
+custom_fonts/font = SubResource( 1 )
+text = "A memòria armazena as informações que o computador está usando ativamente.
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Functions" type="Label" parent="."]
+margin_left = 43.0
+margin_top = 84.0
+margin_right = 197.0
+margin_bottom = 122.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Funções"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Components" type="Label" parent="."]
+margin_left = 38.0
+margin_top = 430.0
+margin_right = 283.0
+margin_bottom = 468.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Componentes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="reset" type="Button" parent="."]
+margin_left = 692.0
+margin_top = 749.0
+margin_right = 848.0
+margin_bottom = 809.0
+custom_fonts/font = SubResource( 3 )
+text = "Voltar"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="reset" to="." method="_on_reset_pressed"]
