@@ -11,7 +11,7 @@
 💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
 
 <p align="center">
-<img src=""C:\Users\Vitor\Pictures\menu.png"" alt="Tela inicial do jogo Tech Path" >
+<img src="imagens/menu.png" alt="Tela inicial do jogo Tech Path" >
 </p>
 
 ## 🛠 Para Executar
