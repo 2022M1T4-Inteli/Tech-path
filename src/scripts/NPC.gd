@@ -15,6 +15,7 @@ func _input(event):
 			dialog.connect('timeline_end', self, 'unpause')
 			add_child(dialog)
 			self.visible = false
+			get_node("StaticBody2D/Barrier").disabled = true
 
 # Quando o persongame "character" entra na área do NPC a função é ativada
 func _on_NPC_body_entered(body):
@@ -28,3 +29,7 @@ func unpause(_timeline_name):
 func _on_NPC_body_exited(body):
 	if body.name == 'character':
 		active = false
+	
+func _dialog_exit(string):
+	match string: "dialog_exit":
+		get_node("Barrier").disabled = true

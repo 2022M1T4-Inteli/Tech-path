@@ -69,26 +69,29 @@ __meta__ = {
 }
 
 [node name="Enunciado" type="Label" parent="Textos"]
-margin_left = -56.0
-margin_top = 2.0
-margin_right = 842.0
-margin_bottom = 27.0
+margin_left = -119.0
+margin_top = 15.0
+margin_right = 874.0
+margin_bottom = 40.0
 rect_scale = Vector2( 1.3, 1.3 )
 custom_fonts/font = SubResource( 1 )
-text = "crie uma equação para dividir igualmente a quantidade de alimentos  "
+text = "crie uma equação apenas com nùmeros para dividir igualmente "
 align = 1
 max_lines_visible = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Textos/Enunciado"]
-margin_left = 298.462
-margin_top = 28.4615
-margin_right = 553.462
-margin_bottom = 47.4615
+[node name="Label" type="Label" parent="Textos"]
+margin_left = 263.0
+margin_top = 50.0
+margin_right = 850.0
+margin_bottom = 76.0
 custom_fonts/font = SubResource( 2 )
-text = "entre as pessoas "
+text = "a quantidade de alimentos entre as pessoas "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Alimentos" type="Label" parent="Textos"]
 margin_left = 112.0

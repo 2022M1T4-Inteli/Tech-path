@@ -120,13 +120,13 @@ __meta__ = {
 }
 
 [node name="Label5" type="Label" parent="."]
-margin_left = -136.0
+margin_left = 26.0
 margin_top = 182.0
-margin_right = 1125.0
+margin_right = 1508.0
 margin_bottom = 241.0
 custom_colors/font_color = Color( 0.898039, 0.905882, 0.0784314, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Conserte o robô colocando as peças no lugar correto."
+text = "Conserte o robô colocando as peças no lugar correto, seguindo uma ordem lògica de montagem ."
 align = 1
 valign = 1
 __meta__ = {
