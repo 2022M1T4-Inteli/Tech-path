@@ -21,12 +21,7 @@
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
 
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 **Windows:**
-É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](https://godotengine.org/)
 Encontre "Tech Path.exe" [aqui](./executáveis/Windows)
 
 **HTML:**
@@ -40,7 +35,14 @@ Através da cópia/clone/ download do repositório, altere os dados do readme.md
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo.
+É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](https://godotengine.org/)
+
+make install
+npm test
+
+```sh
+Coloque código do prompt de comnando se for necessário
+```
 
 ## 🗃 Histórico de lançamentos
 
@@ -49,7 +51,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.2.2 - 13/04/2022
     * Versão final do jogo
     * Minigames de Ciência da Computação e Engenharia de Software não podem ser jogados novamente após acerto
-    * MUDANÇA: Minigame de Engenharia da COmputação com dicas para trazer sentido para o jogador
+    * MUDANÇA: Minigame de Engenharia da Computação com dicas para trazer sentido para o jogador
     * MUDANÇA: Atualização de comentários dos códigos
 * 0.2.1 - 01/04/2022
     * MUDANÇA: Atualização do minigame de Engenharia da Computação (Mudança de funcionamento)
