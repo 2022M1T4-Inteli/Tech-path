@@ -34,9 +34,9 @@ Clique no arquivo "index.html", que está [aqui](./executáveis/HTML), e abra-o 
 
 ## 📈 Exemplo de uso
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
+Este modelo pode ser copiado e utilizado à vontade.
 
-Adicione blocos de códigos e, se necessário, screenshots.
+Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
 ## 💻 Configuração para Desenvolvimento
 
