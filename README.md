@@ -12,6 +12,19 @@ Eligius
 
 ## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner").
 
+## Descrição
+<br><br>
+💡Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
+<br><br>
+
+💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+<br><br>
+O jogo Tech Path tem como objetivo instruir e orientar jovens de ensino médio e jovens que querem se graduar na área da tecnologia a conhecer melhor os cursos de Engenharia da Computação, Engenharia de Software, Ciência da Computação e Sistemas de Informação, que são cursos oferecidos pelo Inteli (Instituto de Tecnologia e Liderança). Desse modo, espera-se que ao final do jogo, os praticantes saibam o propósito de cada curso, quais as diferenças entre eles e também quais são as possíveis áreas de atuação após a graduação.
+
+<br><br>
+O jogo irá se passar em um contexto pós-apocalíptico, em que uma inteligência artificial foi criada para ajudar o planeta Terra, mas concluiu que o problema do mundo eram os próprios humanos, fazendo com que ela hackeasse os códigos dos mísseis nucleares e os lançasse pelos continentes. Nesse panorama, uma parcela social será formada em um bunker tecnológico, onde todos exercem funções específicas para a manutenção dessa sociedade. Diante disso, pela falta de pessoas nas principais áreas da computação (Engenharia da Computação, Engenharia de Software, Ciência da Computação e Sistemas de Informação), um adolescente residente desse lugar deverá passar por testes (minijogos) que irão o nortear para alguma função.
+<br><br>
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
@@ -83,7 +96,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>
 
-Para baixar o executável Windows vá para a pasta <b>executáveis</b>, depois para a pasta <b>Windows<b>, clique no link e clique em Download
+Para baixar o executável Windows vá para a pasta <b>executáveis</b>, depois para a pasta <b>Windows</b>, clique no link e clique em Download
 Para abrir o executável HTML:
    <br>1-Abra o Firefox<br>
    <br>2-Digite na barra de endereços web (onde você coloca a página): about:config<br>
