@@ -4,30 +4,72 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Tech Path - by Eligius
+# Nome do Projeto
+Tech Path
+
+## Nome do Grupo
+Eligius
+
 ## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner").
 
-## Descrição
-💡 Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
+## 🛠 Estrutura de pastas
 
-<p align="center">
-<img src="imagens/menu.png" alt="Tela inicial do jogo Tech Path" >
-</p>
+-Raiz<br>
+|<br>
+|-->documentos<br>
+  &emsp;|-->antigos<br>
+  &emsp;|GDD.docx
+|-->executáveis<br>
+  &emsp;|-->windows<br>
+  &emsp;|-->android<br>
+  &emsp;|-->HTML<br>
+|-->imagens<br>
+|-->src<br>
+|readme.md<br>
 
-## 🛠 Para Executar
+<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
-**Android:**
+Há também 4 pastas que seguem da seguinte forma:
+
+<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+
+<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+
+<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
+
+<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+
+## 🛠 Instalação
+
+<b>Android:</b>
 
 Faça o Download do JOGO.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
 
-**Windows:**
-Encontre "Tech Path.exe" [aqui](./executáveis/Windows)
+```sh
+Coloque código do prompt de comnando se for necessário
+```
 
-**HTML:**
-Clique no arquivo "index.html", que está [aqui](./executáveis/HTML), e abra-o como uma página WEB (através de algum navegador).
+<b>Windows:</b>
+
+Não há instalação! Apenas executável!
+Encontre o TechPath.exe na pasta executáveis e execute-o como qualquer outro programa.
+
+```sh
+Coloque código do prompt de comnando se for necessário
+```
+
+<b>HTML:</b>
+
+Não há instalação!
+Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através do Firefox).
 
 ## 📈 Exemplo de uso
+
+<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="TELA DE MENU" border="0">
+
+Para iniciar o jogo deve-se clicar com o mouse no botão "Jogar"
+
 
 Este modelo pode ser copiado e utilizado à vontade.
 
@@ -35,12 +77,24 @@ Através da cópia/clone/ download do repositório, altere os dados do readme.md
 
 ## 💻 Configuração para Desenvolvimento
 
-É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](https://godotengine.org/)
+Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
-make install
-<br>npm test
+Para abrir este projeto você necessita das seguintes ferramentas:
 
+-<a href="https://godotengine.org/download">GODOT</a>
+
+Para baixar o executável Windows vá para a pasta <b>executáveis</b>, depois para a pasta <b>Windows<b>, clique no link e clique em Download
+Para abrir o executável HTML:
+   <br>1-Abra o Firefox<br>
+   <br>2-Digite na barra de endereços web (onde você coloca a página): about:config<br>
+   <br>3-Na página que surgir há um campo de busca, procure nele: security.fileuri.strict_origin_policy<br>
+   <br>4-Clique na setinha dupla, no canto direito<br>
+   <br>Pronto, você trocou a configuração da linha de true para false.<br>
+   <br>Agora basta abrir seu jogo compilado em HTML no Firefox e tudo estará funcionando!<br>
+   
 ```sh
+make install
+npm test
 Coloque código do prompt de comnando se for necessário
 ```
 
