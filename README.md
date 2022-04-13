@@ -38,7 +38,7 @@ Através da cópia/clone/ download do repositório, altere os dados do readme.md
 É necessário ter o aplicativo do Godot instalado. Você pode encontrar o Godot [aqui](https://godotengine.org/)
 
 make install
-npm test
+<br>npm test
 
 ```sh
 Coloque código do prompt de comnando se for necessário
