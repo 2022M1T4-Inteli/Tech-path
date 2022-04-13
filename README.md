@@ -94,7 +94,8 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>
 
-Para baixar o executável Windows vá para a pasta <b>executáveis</b>, depois para a pasta <b>Windows</b>, clique no link e clique em Download
+Para baixar o executável Windows vá para a pasta <b>executáveis</b>, depois para a pasta <b>Windows</b>, clique em "TechPath.exe" e clique em Download. Depois, clique em "TechPath.pck" e clique em Download. Pronto, agora é só acessar o jogo.
+
 Para abrir o executável HTML:
 
    <br>1-Abra o Firefox<br>
