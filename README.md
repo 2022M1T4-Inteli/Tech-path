@@ -4,19 +4,19 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
-Tech Path
+# Tech Path
+## Eligius
 
-## Nome do Grupo
-Eligius
+## Integrantes: 
 
-## Integrantes: [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg"), [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade"), [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha"), [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto"), [Wagner](https://github.com/WagnerBarcelos "Wagner").
+- [Felipe Silberberg](https://www.linkedin.com/in/felipe-silberberg-111998230/ "Felipe Silberberg")
+- [Jordan Andrade](https://github.com/jordan-acs "Jordan Andrade")
+- [Uelinton Rocha](https://www.linkedin.com/in/uelitonrocha/ "Uelinton Rocha")
+- [Vitor Augusto](https://github.com/dtonavitor "Vitor Augusto")
+- [Wagner](https://github.com/WagnerBarcelos "Wagner")
 
 ## Descrição
-<br><br>
 💡Este jogo busca aprimorar o 'approach' do Inteli para estudantes de ensino médio que pensam, ou nunca pensaram, em estudar alguma das áreas da computação, além de captar outros estudantes que não buscavam o Inteli.
-<br><br>
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
 O jogo Tech Path tem como objetivo instruir e orientar jovens de ensino médio e jovens que querem se graduar na área da tecnologia a conhecer melhor os cursos de Engenharia da Computação, Engenharia de Software, Ciência da Computação e Sistemas de Informação, que são cursos oferecidos pelo Inteli (Instituto de Tecnologia e Liderança). Desse modo, espera-se que ao final do jogo, os praticantes saibam o propósito de cada curso, quais as diferenças entre eles e também quais são as possíveis áreas de atuação após a graduação.
 <br><br>
@@ -25,55 +25,52 @@ O jogo irá se passar em um contexto pós-apocalíptico, em que uma inteligênci
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
-|<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+- Raiz<br><br>
+| --> documentos<br>
+  &emsp;| --> antigos<br>
+  &emsp;| GDD_T4_M1_G4_Eligius_Projeto_Inteli_TECH_PATH_v_1_0.pdf<br>
+| --> executáveis<br>
+  &emsp;| --> Windows<br>
+  &emsp;| --> Html<br>
+| --> imagens<br>
+| --> src<br>
+| readme.md<br>
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+A pasta raiz contém um arquivo principal:
 
-Há também 4 pastas que seguem da seguinte forma:
+- <b>readme.md</b>, que consiste em um guia geral sobre o projeto.
 
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+E, também, 4 subpastas que se organizam da seguinte forma:
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+- <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
 
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
+- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com 2 pastas: uma para binários windows e uma para a web.
 
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+- <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
+
+- <b>src</b>, onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o TechPath.exe na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação, apenas executável. Baixe os arquivos disponíveis em https://github.com/2022M1T4/Projeto4/tree/main/execut%C3%A1veis/Windows e execute "TechPath.exe" como qualquer outro programa.
 
-```sh
-Coloque código do prompt de comnando se for necessário
+```
+Observe que é necessário que o arquivo "TechPath.pck" esteja
+no mesmo diretório que "TechPath.exe" para que o jogo inicie
+corretamente.
 ```
 
 <b>HTML:</b>
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através do Firefox).
+Não há instalação! Baixe os arquivos disponíveis em https://github.com/2022M1T4/Projeto4/tree/main/execut%C3%A1veis/HTML e execute-o como uma página da web (através de algum navegador).
+
+```sh
+Dependendo de suas configurações de firewall, talvez seja necessário
+instaurar um web service como xampp ou wampp para que o jogo rode lo-
+calmente.
+```
 
 ## 📈 Exemplo de uso
 
@@ -86,29 +83,22 @@ Este modelo pode ser copiado e utilizado à vontade.
 
 Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
-## 💻 Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+## 💻 Configuração para desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://godotengine.org/download"> Godot</a>
 
-Para baixar o executável Windows vá para a pasta <b>executáveis</b>, depois para a pasta <b>Windows</b>, clique em "TechPath.exe" e clique em Download. Depois, clique em "TechPath.pck" e clique em Download. Pronto, agora é só acessar o jogo.
+Instruções para a configuração do ambiente de desenvolvimento:
+```
 
-Para abrir o executável HTML:
+1) Clone o repositório.
+2) Abra a engine de desenvolvimento (godot).
+3) No gerenciador de projetos inicial, clique no botão "importar" e, em seguida, no botão "navegar".
+4) Navegue até o repositório clonado e abra a pasta "src".
+5) Selecione o arquivo "project.godot" e em seguida clique no botão "abrir".
+6) Pronto. O seu ambiente de desenvolvimento está configurado.
 
-   <br>1-Abra o Firefox<br>
-   <br>2-Digite na barra de endereços web (onde você coloca a página): about:config<br>
-   <br>3-Na página que surgir há um campo de busca, procure nele: security.fileuri.strict_origin_policy<br>
-   <br>4-Clique na setinha dupla, no canto direito<br>
-   <br>Pronto, você trocou a configuração da linha de true para false.<br>
-   <br>Agora basta abrir seu jogo compilado em HTML no Firefox e tudo estará funcionando!<br>
-   
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
